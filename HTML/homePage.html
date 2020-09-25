@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padWeb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/homePage.css">
+
+</head>
+
+<body onload="startTime()">
+
+
+    <div class="Bar">
+        <div id="charging" class="battery"></div>
+
+        <div id="time"></div>
+
+        <figure class="wifiFiguer">
+            
+            <figcaption class="LTUC">LTUC</figcaption>
+
+            <img class="wifiSignal" src="../images/wifi.png">
+        </figure>
+    </div>
+
+
+    <video autoplay muted loop id="myVideo">
+        <source src="../images/homeBackground.mp4" type="video/mp4">
+    </video>
+
+    <div class="allPage">
+
+        <div class="allFigures">
+
+            <figure class="figure1">
+                <img id="music" class="fisrLine" src="../images/music.png" alt="music" onmousedown="touch.play()">
+                <figcaption class="firstText">Music</figcaption>
+            </figure>
+
+
+            <figure class="figure1">
+                <img id="notes" class="fisrLine" src="../images/notes.png" alt="notes" onmousedown="touch.play()">
+                <figcaption class="firstText">Notes</figcaption>
+            </figure>
+
+            <figure class="figure1">
+                <img id="photos" class="fisrLine" src="../images/Photos.png" alt="Photos" onmousedown="touch.play()">
+                <figcaption class="firstText">Photos</figcaption>
+            </figure>
+
+            <figure class="figure1">
+                <img id="weather" class="fisrLine" src="../images/weather.png" alt="weather" onmousedown="touch.play()">
+                <figcaption class="firstText">Weather</figcaption>
+            </figure>
+
+            <figure class="figure1">
+                <img id="clock" class="fisrLine" src="../images/clock.png" alt="clock" onmousedown="touch.play()">
+                <figcaption class="firstText">Clock</figcaption>
+            </figure>
+
+        </div>
+
+        <div class="allFigures2">
+
+            <figure class="figure2">
+                <img id="phone" class="fisrLine2" src="../images/Phone.png" alt="Phone" onmousedown="touch.play()">
+                <figcaption class="firstText2">Phone</figcaption>
+            </figure>
+
+            <figure class="figure2">
+                <img id="maps" class="fisrLine2" src="../images/maps.png" alt="maps" onmousedown="touch.play()">
+                <figcaption class="firstText2">Maps</figcaption>
+            </figure>
+
+
+            <figure class="figure2">
+                <a href="https://www.youtube.com/"><img id="youtube" class="fisrLine2" src="../images/Youtube.png"
+                        alt="Youtube" onmousedown="musix.play()"></a>
+                <figcaption class="firstText2">Youtube</figcaption>
+            </figure>
+
+
+
+            <!-- <figure class="figure2">
+        <img class="fisrLine2" src="img/Phone.png" alt="Phone" onmousedown="musix.play()" >
+        <figcaption class="firstText2" >Music</figcaption>
+    </figure>
+
+
+    <figure class="figure2">
+        <img class="fisrLine2" src="img/Phone.png" alt="Phone" onmousedown="musix.play()" >
+        <figcaption class="firstText2" >Music</figcaption>
+    </figure> -->
+
+
+        </div>
+
+
+
+
+        <script src="../JS/homePage.js"></script>
+</body>
+
+</html>
