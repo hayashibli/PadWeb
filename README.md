@@ -26,7 +26,7 @@
    
 # Domain model Diagram 
 
-   ![Domain model Diagram](class.png)
+   ![Domain model Diagram](class2.png)
    
 # Entity Relationship Diagram
 
