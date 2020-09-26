@@ -36,6 +36,6 @@
    
    ## ER Diagram
    
-   ![Entity Relationship Diagram](er2.png)
+   ![Entity Relationship Diagram](ER2.png)
    
 
