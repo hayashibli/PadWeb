@@ -56,6 +56,8 @@ Analysts
 - UR6: The user shall be able to select his favorite music category
 
 # 1.4 Data Flow (Happy senario)
-The user will search in the browser about our page like enter in the browser "PadWeb" the will enter to our website the start web pag will appear that shows the  animated logo for our page then the home page will appear that contains multiple app inside it like apple IPad with the same structure of Ipad . The main app of our app is MUSIC app after the user will click on it the music page will apper and contains music categories like rock,pop,and shaabi . The user will click in his favorite categories that contain a list of songs , the user can click on any of them and listen to the song or if he/she love it can add it to his favorite songs .if the user interest to Know about the web app developer he/she can click on About Us icon which provide him with the information about the developer of the web app.
+The user will search in the browser about our page like enter in the browser "PadWeb" the will enter to our website the start web pag will appear that shows the  animated logo for our page then the home page will appear that contains multiple app inside it like apple IPad with the same structure of Ipad . The main page of our app is MUSIC app after the user will click on it the music page will apper and contains music categories like rock,pop,and shaabi . The user will click in his favorite categories that contain a list of songs , the user can click on any of them and listen to the song or if he/she love it can add it to his favorite songs by clicking in add to favorite, the will be a button iside each page that will return the user to the home page like IPad .if the user interest to Know about the web app developer he/she can click on About Us icon which provide him with the information about the developer of the web app.
+
+
 
 
