@@ -24,6 +24,9 @@
    #### as a user i want the hole  pages to be Interactive and have a beautiful css
    - use css and the animation to style your page 
    
+# Domain model Diagram 
+
+   ![Domain model Diagram](class.png)
    
 # Entity Relationship Diagram
 
