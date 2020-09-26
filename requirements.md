@@ -11,3 +11,48 @@ In "WebPad" website is especially aimed for all user around the world
 3. The web app provide the user with information a bout the owners of the app 
 4. The web app enable the user to select his favorite music category
 5. The web app enable the user to listen to a songs
+
+Our web page will not develop to be an IOS application and the web page will not be connect to dataBase.
+
+1.3 Responsibilities
+
+In "WebPad" there is a role for each team member :
+
+Supervisor
+Dr. Hanaa Maratouq
+
+Project Manager
+1.Hala shibli
+
+Developer
+1. Abdulla 
+2. batool alomari
+3. Hala shibli
+4. Joudi awameh
+5. Omar Zain
+
+Analysts
+1. batool alomari
+2. Joudi Awameh
+3. Omar Zain
+
+# 1.3 Functional Requirements
+
+## 1.3.1 System requirements:
+
+- SR1: The system should be running any operating system
+- SR2: The system shall be view the music categories 
+- SR3: The system shall allow the user to select his favorite
+- SR4: The system shall view the owners information
+- SR5: The system shall allow the user to clicks any icon in the app
+
+## 1.3.2 User requirements:
+
+- UR1: The user shall start the web app in his browser
+- UR2: The user shall add songs to his favorite
+- UR3: The user shall select the songs
+- UR4: The user shall be able to play the  songs
+- UR5: The user shall be able to click app icon
+- UR6: The user shall be able to select his favorite music category
+
+
