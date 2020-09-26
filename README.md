@@ -23,3 +23,7 @@
 5. style and animation 
    #### as a user i want the hole  pages to be Interactive and have a beautiful css
    - use css and the animation to style your page 
+   
+   
+# Entity Relationship Diagram
+![Entity Relationship Diagram](er.png)
