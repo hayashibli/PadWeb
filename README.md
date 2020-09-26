@@ -27,8 +27,11 @@
    
 # Entity Relationship Diagram
 
+   ## Table Diagram 
+   
    ![Entity Relationship Diagram](er.png)
    
+   ## ER Diagram
    
    ![Entity Relationship Diagram](er2.png)
    
