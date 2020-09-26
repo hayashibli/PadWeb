@@ -38,4 +38,23 @@
    
    ![Entity Relationship Diagram](ER2.png)
    
+   <br />
 
+
+# wireframe  project :
+
+#### interance
+![](wireframe/img.png)
+<br />
+
+#### main screen
+![](wireframe/img1.png)
+<br />
+
+#### music app
+![](wireframe/img2.png)
+<br />
+
+#### ABOUT US
+![](wireframe/img1.png)
+<br />
