@@ -26,24 +26,24 @@
    
 # Domain model Diagram 
 
-   ![Domain model Diagram](class2.png)
+   ![Domain model Diagram](wireframe/class2.png)
    
 # Entity Relationship Diagram
 
    ## Table Diagram 
    
-   ![Entity Relationship Diagram](er.png)
+   ![Entity Relationship Diagram](wireframe/er.png)
    
    ## ER Diagram
    
-   ![Entity Relationship Diagram](ER2.png)
+   ![Entity Relationship Diagram](wireframe/ER2.png)
    
    <br />
 
 
 # wireframe  project :
 
-#### interance
+#### enterance
 ![](wireframe/img.png)
 <br />
 
@@ -56,5 +56,5 @@
 <br />
 
 #### ABOUT US
-![](wireframe/img1.png)
+![](wireframe/img3.png)
 <br />
