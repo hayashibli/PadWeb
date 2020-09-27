@@ -25,15 +25,16 @@ body {
         z-index: 0;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        animation: slideanimation 18s linear infinite 0s; 
+        animation: slideanimation 20s linear infinite 0s; 
   }
   
   .slideshow li:nth-child(1) span { 
     background-image: url(../images/dj-mixer.jpg);
+    
   }
   .slideshow li:nth-child(2) span { 
     background-image: url(../images/musicgirl.jpg);
-    animation-delay: 6s;
+    animation-delay: 8s;
   }
   .slideshow li:nth-child(3) span { 
     background-image: url(../images/music.gif);
@@ -493,3 +494,216 @@ height: 80px;
     color: purple;
     transition: all 0.15s linear;
   }
+
+  /*shaabi list */
+  /*--------------------------------------------*/
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 2.5px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  
+  h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fcfafa;
+    width: 90px;
+  }
+  .toLeft{
+      margin-left: -3px;
+      
+  }
+  #shaabiListDiv{
+    margin-left: 80%;
+    position: absolute;
+    left:1%;
+    top: 100%;
+  }
+  #shaabiList {
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    height: 650px;
+    width: 366px;
+    position: absolute;
+    left: 20%;
+    top: 100%;
+    transform: translate(-50%, 0);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    margin: 30px 0;
+  }
+  
+  /*.header {
+    display: inline-flex;
+    margin: 0 0 40px 0;
+  }*/
+  
+  input[type=checkbox] {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+  }
+  
+  label.main:before {
+    position: absolute;
+    top: 23px;
+    left: 23px;
+    font-family: FontAwesome;
+    content: '\f0c9';
+    color: #959595;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease-in;
+  }
+  
+  label.main:hover:before {
+    color: #bbb;
+  }
+  
+  #shaabiList> #magicButton3 ~ label.main:before {
+    color: purple;
+    transition: all 0.3s ease-in;
+  }
+  
+  .coverImage3 {
+    background: url('../images/shaabi.gif') no-repeat ;
+    background-size: cover;
+    width: 366px;
+    height: 366px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: 0% 0%;
+    transition: all 0.3s ease-in;
+  }
+  /*cover image scale*/
+  #shaabiList > #magicButton3:checked ~ .coverImage3 {
+    transform: scale(0.251, 0.251);
+    left: 23px;
+    top: 60px;
+    transition: all 0.3s ease-in;
+    border-radius: 20px;
+  }
+  .bodyPlayer3 {
+    position: absolute;
+    top: 366px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 286px;
+    width: 366px;
+    background: #111;
+    transition: all 0.3s ease-in;
+  }
+  .bodyPlayer3 p {
+      color: white;
+      font-family: 'Righteous', cursive;
+      font-size: 60px;
+      text-align: center;
+      margin-top: 10%;
+      margin-left: 9.5%;
+  }
+  
+  #shaabiList> #magicButton3:checked~ .bodyPlayer3 {
+    height: 470px;
+    left: 0;
+    top: 180px;
+    transition: all 0.3s ease-in;
+  }
+  
+  .list {
+    border-spacing: 0px 3.5px;
+    width: 342px;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 378px;
+    left: 12px;
+    transform-origin: 0% 0%;
+    transform: scale(0.1, 0.1);
+    transition: all 0.3s ease-in;
+  }
+  
+  .list tr {
+    transform-origin: 0% 50%;
+    height: 50px;
+    text-align: center;
+    background: #1d1d1d;
+    text-indent: 8px;
+  }
+  
+  .list tr:hover {
+    background:#222;
+    cursor: pointer;
+  }
+  #shaabiList > #magicButton3:checked ~ .list {
+    top: 192px;
+    left: 12px;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1, 1);
+    transition: all 0.3s ease-in;
+  }
+  audio{
+  width: 200px;
+  height: 80px;
+  
+  }
+    
+    label.zmr3:before {
+      font-family: FontAwesome;
+      content: "\f08a";
+      color: rgb(3, 2, 3);
+      font-size: 15px;
+      line-height: 15px;
+      cursor: pointer;
+      z-index: 10;
+      transition: all 0.15s linear;
+    }
+    
+    td > #shaabiheart:checked ~ label.zmr3:before {
+      content: "\f004";
+      color: purple;
+      transition: all 0.15s linear;
+    }
+    
+    td > #shaabiheart1:checked ~ label.zmr3:before {
+      content: "\f004";
+      color: purple;
+      transition: all 0.15s linear;
+    }
+    
+    td > #shaabiheart2:checked ~ label.zmr3:before {
+      content: "\f004";
+      color: purple;
+      transition: all 0.15s linear;
+    }
+    
+    td > #shaabiheart3:checked ~ label.zmr3:before {
+      content: "\f004";
+      color: purple;
+      transition: all 0.15s linear;
+    }
+    
+    td > #shaabiheart4:checked ~ label.zmr3:before {
+      content: "\f004";
+      color: purple;
+      transition: all 0.15s linear;
+    }
+  
