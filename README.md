@@ -56,5 +56,5 @@
 <br />
 
 #### ABOUT US
-![](wireframe/img1.png)
+![](wireframe/img3.png)
 <br />
