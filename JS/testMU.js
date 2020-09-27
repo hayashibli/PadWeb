@@ -1,18 +1,27 @@
 'use strict';
-var rockItem= [];
-function Rock(name) {
-  this.name = name;
-  rockItem.push(this);
-}
+
+
+ //= [];
+
 if(localStorage.getItem('rock')){
-  rockItem = JSON.parse(localStorage.getItem('rock'));
+  var rockItem = JSON.parse(localStorage.getItem('rock'));
 }else{
+  var rockItem=[];
+}
+
+
+
+function Rock(name) {
+    this.name = name;
+    rockItem.push(this);
+  }
+
   new Rock('Remember Everything');
   new Rock('Wrong Side of Heaven');
   new Rock('Everybody Loves An Outlaw ');
   new Rock('Black');
   new Rock('Jeremy');
-}
+
 
 var heart = document.getElementById('heart');
 var heart1 = document.getElementById('heart1');
