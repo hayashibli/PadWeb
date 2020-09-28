@@ -130,7 +130,7 @@ new Pop('Diamonds');
 
 
 if (localStorage.getItem('pop')) {
- var  popClick = JSON.parse(localStorage.getItem('pop'));
+  var popClick = JSON.parse(localStorage.getItem('pop'));
 } else {
   var popClick = [];
 }
@@ -249,7 +249,7 @@ new Shaabi('Wdaa ya');
 
 
 if (localStorage.getItem('shaabi')) {
- var  shaabiClick = JSON.parse(localStorage.getItem('shaabi'));
+  var shaabiClick = JSON.parse(localStorage.getItem('shaabi'));
 } else {
   var shaabiClick = [];
 }
