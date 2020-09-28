@@ -115,5 +115,120 @@ function favouret4(event) {
   }
 }
 
-//--------------------------------------------------------------------
+//------------------ Pop favourite  --------------------------------------------------
 
+var popItem = [];
+function Pop(name) {
+  this.name = name;
+  popItem.push(this);
+}
+new Pop('Get Me');
+new Pop('Holly');
+new Pop('Rain On Me');
+new Pop('Wild Life');
+new Pop('Diamonds');
+
+
+if (localStorage.getItem('pop')) {
+ var  popClick = JSON.parse(localStorage.getItem('pop'));
+} else {
+  var popClick = [];
+}
+
+
+
+var popheart = document.getElementById('popheart');
+var popheart1 = document.getElementById('popheart1');
+var popheart2 = document.getElementById('popheart2');
+var popheart3 = document.getElementById('popheart3');
+var popheart4 = document.getElementById('popheart4');
+
+
+popheart.addEventListener('click', popFavourite);
+popheart1.addEventListener('click', popFavouret1);
+popheart2.addEventListener('click', popFavouret2);
+popheart3.addEventListener('click', popFavouret3);
+popheart4.addEventListener('click', popFavouret4);
+
+
+function popFavourite(event) {
+  
+  if (event.target.checked) {
+    popClick.push('Get Me');
+    localStorage.setItem('pop', JSON.stringify(popClick));
+  } else if (!event.target.checked) {
+    var index = popClick.indexOf('Get Me');
+    popClick.splice(index, 1);
+    localStorage.removeItem('pop');
+    localStorage.setItem('pop', JSON.stringify(popClick));
+    console.log(popClick);
+  }
+  
+}
+
+
+
+
+function popFavouret1(event) {
+
+  if (event.target.checked) {
+    popClick.push('Holy');
+    localStorage.setItem('pop', JSON.stringify(popClick));
+  } else if (!event.target.checked) {
+    var index = popClick.indexOf('Holy');
+    popClick.splice(index, 1);
+    localStorage.removeItem('pop');
+    localStorage.setItem('pop', JSON.stringify(popClick));
+    console.log(popClick);
+  }
+}
+
+
+
+
+function popFavouret2(event) {
+
+  if (event.target.checked) {
+    popClick.push('Rain On Me');
+    localStorage.setItem('pop', JSON.stringify(popClick));
+  } else if (!event.target.checked) {
+    var index = popClick.indexOf('Rain On Me');
+    popClick.splice(index, 1);
+    localStorage.removeItem('pop');
+    localStorage.setItem('pop', JSON.stringify(popClick));
+    console.log(popClick);
+  }
+}
+
+
+
+function popFavouret3(event) {
+
+  if (event.target.checked) {
+    popClick.push('Wild Life');
+    localStorage.setItem('pop', JSON.stringify(popClick));
+  } else if (!event.target.checked) {
+    var index = popClick.indexOf('Wild Life');
+    popClick.splice(index, 1);
+    localStorage.removeItem('pop');
+    localStorage.setItem('pop', JSON.stringify(popClick));
+    console.log(popClick);
+  }
+}
+
+
+
+
+function popFavouret4(event) {
+
+  if (event.target.checked) {
+    popClick.push('Diamonds');
+    localStorage.setItem('pop', JSON.stringify(popClick));
+  } else if (!event.target.checked) {
+    var index = popClick.indexOf('Diamonds');
+    popClick.splice(index, 1);
+    localStorage.removeItem('pop');
+    localStorage.setItem('pop', JSON.stringify(popClick));
+    console.log(popClick);
+  }
+}
