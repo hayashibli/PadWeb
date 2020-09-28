@@ -1,28 +1,20 @@
 'use strict';
-
-
-//= [];
-
-var rockItem= [];
+var rockItem = [];
 function Rock(name) {
   this.name = name;
   rockItem.push(this);
 }
-
-if(localStorage.getItem('rock')){
-  rockItem = JSON.parse(localStorage.getItem('rock'));
-}else { 
 new Rock('Remember Everything');
 new Rock('Wrong Side of Heaven');
 new Rock('Everybody Loves An Outlaw');
 new Rock('Black');
 new Rock('Jeremy');
-}
 
-if(localStorage.getItem('rock')){
-  var rockClick = JSON.parse(localStorage.getItem('rock'));
-}else { 
-  var rockClick=[];
+
+if (localStorage.getItem('rock')) {
+  rockClick = JSON.parse(localStorage.getItem('rock'));
+} else {
+  var rockClick = [];
 }
 
 
@@ -36,53 +28,90 @@ var heart4 = document.getElementById('heart4');
 
 
 heart.addEventListener('click', addfavourite);
-heart1.addEventListener('click', addfavourite);
-heart2.addEventListener('click', addfavourite);
-heart3.addEventListener('click', addfavourite);
-heart4.addEventListener('click', addfavourite);
+heart1.addEventListener('click', favouret1);
+heart2.addEventListener('click', favouret2);
+heart3.addEventListener('click', favouret3);
+heart4.addEventListener('click', favouret4);
 
-/*heart.addEventListener('change', removefavourite);
-heart1.addEventListener('change', removefavourite);
-heart2.addEventListener('change', removefavourite);
-heart3.addEventListener('change', removefavourite);
-heart4.addEventListener('change', removefavourite);*/
+
 
 function addfavourite(event) {
-
-  /*if (localStorage.getItem('rock')) {
-     rockItem = JSON.parse(localStorage.getItem('rock'));
   
-  }
-  else {*/
-  if (event.target.id === 'heart') {
- 
+  if (event.target.checked) {
     rockClick.push('Remember Everything');
     localStorage.setItem('rock', JSON.stringify(rockClick));
-    
+  } else if (!event.target.checked) {
+    var index = rockClick.indexOf('Remember Everything');
+    rockClick.splice(index, 1);
+    localStorage.removeItem('rock');
+    localStorage.setItem('rock', JSON.stringify(rockClick));
+    console.log(rockClick);
+  }
+  
+}
 
-    /*clickItem.push(rockItem[0]);
-    localStorage.setItem('rock', JSON.stringify(clickItem[0]));*/
-         
-  } else if (event.target.id === 'heart1') {
+
+
+
+function favouret1(event) {
+
+  if (event.target.checked) {
     rockClick.push('Wrong Side of Heaven');
     localStorage.setItem('rock', JSON.stringify(rockClick));
-    //clickItem.push(rockItem[1]);
+  } else if (!event.target.checked) {
+    var index = rockClick.indexOf('Wrong Side of Heaven');
+    rockClick.splice(index, 1);
+    localStorage.removeItem('rock');
+    localStorage.setItem('rock', JSON.stringify(rockClick));
+  }
+}
 
-  } else if (event.target.id === 'heart2') {
+
+
+
+function favouret2(event) {
+
+  if (event.target.checked) {
     rockClick.push('Everybody Loves An Outlaw');
     localStorage.setItem('rock', JSON.stringify(rockClick));
-   // clickItem.push(rockItem[2]);
+  } else if (!event.target.checked) {
+    var index = rockClick.indexOf('Everybody Loves An Outlaw');
+    rockClick.splice(index, 1);
+    localStorage.removeItem('rock');
+    localStorage.setItem('rock', JSON.stringify(rockClick));
+  }
+}
 
-  } else if (event.target.id === 'heart3') {
+
+
+function favouret3(event) {
+
+  if (event.target.checked) {
     rockClick.push('Black');
     localStorage.setItem('rock', JSON.stringify(rockClick));
-    //clickItem.push(rockItem[3]);
+  } else if (!event.target.checked) {
+    var index = rockClick.indexOf('Black');
+    rockClick.splice(index, 1);
+    localStorage.removeItem('rock');
+    localStorage.setItem('rock', JSON.stringify(rockClick));
+  }
+}
 
-  } else if (event.target.id === 'heart4') {
+
+
+
+function favouret4(event) {
+
+  if (event.target.checked) {
     rockClick.push('Jeremy');
     localStorage.setItem('rock', JSON.stringify(rockClick));
-    //clickItem.push(rockItem[4]);
+  } else if (!event.target.checked) {
+
+    var index = rockClick.indexOf('Jeremy');
+    rockClick.splice(index, 1);
+    localStorage.removeItem('rock');
+    localStorage.setItem('rock', JSON.stringify(rockClick));
   }
-
-
 }
+
+//--------------------------------------------------------------------
