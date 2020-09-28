@@ -1,3 +1,4 @@
+
 'use strict';
 var rockItem = [];
 function Rock(name) {
@@ -115,3 +116,4 @@ function favouret4(event) {
 }
 
 //--------------------------------------------------------------------
+
