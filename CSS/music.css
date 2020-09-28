@@ -714,9 +714,9 @@ height: 80px;
 .homeButton{
   
   z-index: 1000;
-  width: -14%;
   margin-top: 41%;
   width: 90px;
   position: fixed;
-  right: 0;
+  right: -6px;
+  bottom: 7px;
 }
