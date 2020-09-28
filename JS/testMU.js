@@ -30,11 +30,17 @@ var heart3 = document.getElementById('heart3');
 var heart4 = document.getElementById('heart4');
 
 
-heart.addEventListener('lclick', addfavourite);
+/*heart.addEventListener('click', addfavourite);
 heart1.addEventListener('click', addfavourite);
 heart2.addEventListener('click', addfavourite);
 heart3.addEventListener('click', addfavourite);
-heart4.addEventListener('click', addfavourite);
+heart4.addEventListener('click', addfavourite);*/
+
+heart.addEventListener('change', addfavourite);
+heart1.addEventListener('change', addfavourite);
+heart2.addEventListener('change', addfavourite);
+heart3.addEventListener('change', addfavourite);
+heart4.addEventListener('change', addfavourite);
 
 function addfavourite(event) {
 
