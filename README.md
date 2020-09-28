@@ -1,5 +1,5 @@
 # PadWeb
-<<<<<<< HEAD
+
 **Team members**
 - Haya shibli
 
@@ -14,7 +14,7 @@
 **Project Description**
 
 A website that simulate the iPad general look and icons with some functionality in each icon (app). Our project change the usual structure and design of websites as well as it can contain multiple different ideas and websites within it. It's an entertainment website so it will be so helpful to the user because the structure of the website has the flavor of the iPad. The MVP for our project is to make a full website of apps including one app with full functionality.
-=======
+
 
 #  User Stories
 1. starter page 
@@ -74,4 +74,14 @@ A website that simulate the iPad general look and icons with some functionality 
 #### ABOUT US
 ![](wireframe/img3.png)
 <br />
->>>>>>> 253ad3e4aa1912766a3c009b54ff868947035cb1
+
+
+# Problem Domain
+Most of the websites have the same display and structure which make it some boring and nothing new and some of them is had a complicated navigation or maybe not usual for the user , from this point we decide as team that we will create a new structure, new view and display for our website that is similar to the most thing the the user use which the IPAD we create a similar website for the IPAD.
+
+# 1.0.0 index.html
+we 
+
+
+
+
