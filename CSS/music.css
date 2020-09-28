@@ -8,6 +8,9 @@ body {
     list-style: none;
     z-index: 0;
     margin-bottom: 20px;
+   
+
+  
   }
   
   
@@ -17,6 +20,7 @@ body {
         position: absolute;
         top: 0px;
         left: 0px;
+        margin-top: 30px;
         color: transparent;
         background-size: cover;
         background-position: 50% 50%;
