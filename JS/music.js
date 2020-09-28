@@ -232,3 +232,122 @@ function popFavouret4(event) {
     console.log(popClick);
   }
 }
+
+
+//------------------ Shaabi favourite  --------------------------------------------------
+
+var shaabiItem = [];
+function Shaabi(name) {
+  this.name = name;
+  shaabiItem.push(this);
+}
+new Shaabi('OudElbanat');
+new Shaabi('Bihawaya');
+new Shaabi('HobOmri');
+new Shaabi('Habbitek');
+new Shaabi('Wdaa ya');
+
+
+if (localStorage.getItem('shaabi')) {
+ var  shaabiClick = JSON.parse(localStorage.getItem('shaabi'));
+} else {
+  var shaabiClick = [];
+}
+
+
+
+var shaabiheart = document.getElementById('shaabiheart');
+var shaabiheart1 = document.getElementById('shaabiheart1');
+var shaabiheart2 = document.getElementById('shaabiheart2');
+var shaabiheart3 = document.getElementById('shaabiheart3');
+var shaabiheart4 = document.getElementById('shaabiheart4');
+
+
+shaabiheart.addEventListener('click', shaabiFavourite);
+shaabiheart1.addEventListener('click', shaabiFavouret1);
+shaabiheart2.addEventListener('click', shaabiFavouret2);
+shaabiheart3.addEventListener('click', shaabiFavouret3);
+shaabiheart4.addEventListener('click', shaabiFavouret4);
+
+
+function shaabiFavourite(event) {
+  
+  if (event.target.checked) {
+    shaabiClick.push('OudElbanat');
+    localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+  } else if (!event.target.checked) {
+    var index = shaabiClick.indexOf('OudElbanat');
+    shaabiClick.splice(index, 1);
+    localStorage.removeItem('shaabi');
+    localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+    console.log(shaabiClick);
+  }
+  
+}
+
+
+
+
+function shaabiFavouret1(event) {
+
+  if (event.target.checked) {
+    shaabiClick.push('Bihawaya');
+    localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+  } else if (!event.target.checked) {
+    var index = shaabiClick.indexOf('Bihawaya');
+    shaabiClick.splice(index, 1);
+    localStorage.removeItem('shaabi');
+    localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+    console.log(shaabiClick);
+  }
+}
+
+
+
+
+function shaabiFavouret2(event) {
+
+  if (event.target.checked) {
+    shaabiClick.push('HobOmri');
+    localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+  } else if (!event.target.checked) {
+    var index = shaabiClick.indexOf('HobOmri');
+    shaabiClick.splice(index, 1);
+    localStorage.removeItem('shaabi');
+    localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+    console.log(shaabiClick);
+  }
+}
+
+
+
+function shaabiFavouret3(event) {
+
+  if (event.target.checked) {
+    shaabiClick.push('Habbitek');
+    localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+  } else if (!event.target.checked) {
+    var index = shaabiClick.indexOf('Habbitek');
+    shaabiClick.splice(index, 1);
+    localStorage.removeItem('shaabi');
+    localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+    console.log(shaabiClick);
+  }
+}
+
+
+
+
+function shaabiFavouret4(event) {
+
+  if (event.target.checked) {
+    shaabiClick.push('Wdaa ya');
+    localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+  } else if (!event.target.checked) {
+    var index = shaabiClick.indexOf('Wdaa ya');
+    shaabiClick.splice(index, 1);
+    localStorage.removeItem('shaabi');
+    localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+    console.log(shaabiClick);
+  }
+}
