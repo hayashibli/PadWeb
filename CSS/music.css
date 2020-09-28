@@ -711,3 +711,12 @@ height: 80px;
       transition: all 0.15s linear;
     }
   
+.homeButton{
+  
+  z-index: 1000;
+  width: -14%;
+  margin-top: 41%;
+  width: 90px;
+  position: fixed;
+  right: 0;
+}
