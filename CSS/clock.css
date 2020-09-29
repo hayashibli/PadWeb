@@ -1,20 +1,21 @@
-/* div {
-    margin: 200px;
-    padding: 10%;
-} */
-
-
-/* * {
-    background-color: rgb(117, 60, 139); 
-}*/
+.homeButton{
+  
+    z-index: 1000;
+    margin-top: 41%;
+    width: 90px;
+    position: fixed;
+    right: 1px;
+    bottom: 9px;
+  }
 
 body {
     background: black;
+    overflow: hidden;
 }
 
 #ClockDiv {
     position: absolute;
-    top: 50%;
+    margin-top: 22%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     color: #fe17d8;
@@ -23,7 +24,41 @@ body {
     letter-spacing: 7px;
 }
 
-hr {
+
+
+.clockANM{
+
+    animation: clock 2s ;
+
+  }
+  @keyframes clock {
+  
+    from {
+  
+      opacity: 0;
+      transform: skewY(55deg);
+      
+  }
+  
+  
+  
+  to {
+  
+      opacity: 5;
+      transform: rotateX(0);
+  
+  }
+}
+
+
+
+
+
+
+
+
+
+/* hr {
     margin-left: 25%;
     position: fixed;
     bottom: 1%;
@@ -33,4 +68,4 @@ hr {
     border: solid rgb(153, 150, 150) 3px;
     background-color: rgb(199, 191, 191);
     border-radius: 51%;
-}
+} */
