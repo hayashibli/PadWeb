@@ -67,49 +67,7 @@ img{
     border-radius: 100%;
     transition: 800ms;
     transform: rotate(119deg);
-
-
-
-
-
-
-    /* animation: call 1s ;
-
-  }
-  @keyframes call {
-  
-    from {
-  
-      opacity: 0;
-      transform: rotate(90)
-      
-  }
-  
-  
-  
-  to {
-  
-      opacity: 5;
-      transform: rotateX(0); */
-  
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
 .call{
 
     height: 85px;
@@ -120,4 +78,20 @@ img{
 
 .callLogo{
     margin-left: 45%;
+}
+#dial{
+    color: white;
+    display: flex;
+    position: absolute;
+    left: 37%;
+    top: 2%;
+    font-size: 50px;
+}
+#clear{
+    position: absolute;
+    left: 57%;
+    top: 9%;
+    width: 60px;
+    height: 35px;
+    cursor: pointer;
 }
