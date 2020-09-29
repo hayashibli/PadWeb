@@ -9,13 +9,14 @@ body {
 
 main {
     height: 1000px;
+    height: 660px;
+    margin-top: -6%;
+    margin-bottom: -28%;
   }
+
   .flip-box {
     background-color: transparent;
     width: 30%;
-    /* height: 367px; */
-    /* perspective: 1000px; */
-    /* margin-left: 13%; */
     margin-top: 2%;
     float: left;
   }
@@ -103,7 +104,11 @@ hr {
 
 /* --------------------- */
 
-body {font-family: Arial, Helvetica, sans-serif;}
+body {font-family: Arial, Helvetica, sans-serif;
+
+  overflow: hidden;
+
+}
 * {box-sizing: border-box;}
 
 
@@ -183,4 +188,13 @@ font-family: 'Audiowide', cursive;
 color: palevioletred;
 font-size: 34px;
 
+}
+
+.homeButn{
+  z-index: 1000;
+  margin-top: 43%;
+  width: 82px;
+  position: fixed;
+  left: 0px;
+  bottom: 7px;
 }
