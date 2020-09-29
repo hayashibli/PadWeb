@@ -217,13 +217,31 @@ margin-top: 0.9%;
 } 
 
 
-#youtube:hover{
+#dailymotion:hover{
     cursor: pointer; 
     animation: shake 0.5s;
     animation-iteration-count: 9s; 
     animation: shake 0.9s linear infinite;
    
 } 
+
+#bing:hover{
+    cursor: pointer; 
+    animation: shake 0.5s;
+    animation-iteration-count: 9s; 
+    animation: shake 0.9s linear infinite;
+   
+} 
+
+
+#contacUs:hover{
+    cursor: pointer; 
+    animation: shake 0.5s;
+    animation-iteration-count: 9s; 
+    animation: shake 0.9s linear infinite;
+   
+} 
+
 
 
 
@@ -243,3 +261,10 @@ margin-top: 0.9%;
 
 
 
+  #dailymotion{
+    border-radius: 28px;
+  }
+
+  #dMotion{
+    margin-left: 86px;
+  }

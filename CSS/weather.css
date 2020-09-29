@@ -1,13 +1,46 @@
-div {}
-
-hr {
-    margin-left: 25%;
+.homeButton{
+  
+    z-index: 1000;
+    margin-top: 0%;
+    width: 115px;
     position: fixed;
-    bottom: 1%;
-    cursor: pointer;
-    height: 5px;
-    width: 50%;
-    border: solid rgb(153, 150, 150) 3px;
-    background-color: rgb(199, 191, 191);
-    border-radius: 51%;
-}
+    right: 0px;
+    bottom: 23px;
+  }
+
+  iframe{
+
+    border-radius: 30px;
+    border: 7px double black;
+  
+  }
+
+  body{
+      overflow: hidden;
+  }
+
+
+  .weatherANM{
+
+
+    animation: weather 1s ;
+
+  }
+  @keyframes weather {
+  
+    from {
+  
+      opacity: 0;
+      transform: rotate(720deg)
+      
+  }
+  
+  
+  
+  to {
+  
+      opacity: 5;
+      transform: rotateX(0);
+  
+  }
+  }
