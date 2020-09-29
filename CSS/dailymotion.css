@@ -1,0 +1,11 @@
+hr {
+    margin-left: 25%;
+    position: fixed;
+    bottom: 1%;
+    cursor: pointer;
+    height: 5px;
+    width: 50%;
+    border: solid rgb(153, 150, 150) 3px;
+    background-color: rgb(199, 191, 191);
+    border-radius: 51%;
+}
