@@ -1,0 +1,123 @@
+body{
+    overflow: hidden;
+    background-image: url(../images/Numbers/phoneBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.homeButton {
+    z-index: 50;
+    width: 90px;
+    position: fixed;
+    right: -6px;
+    bottom: 7px;
+}
+
+.keypad{
+
+    cursor: pointer;
+    width: 98px;
+}
+
+#firstRow, #secondRow, #thirdRow, #lastRow{
+
+    text-align: center;
+
+}
+
+#firstRow{
+    margin-top: 15px;
+}
+
+#lastRow{
+
+    margin-bottom: 105px;
+}
+
+img{
+    margin: 0.5%;
+}
+
+.allRows{
+    margin-top: 9%;
+    border: 2px solid;
+    color: black;
+    width: 26%;
+    text-align: center;
+    margin-left: 35%;
+}
+
+#call {
+    text-align: center;
+    margin-top: -13%;
+    background-color: #0add26;
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    transition: 800ms;
+}
+
+#call:active{
+    text-align: center;
+    margin-top: -13%;
+    background-color: #e00000;
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    transition: 800ms;
+    transform: rotate(119deg);
+
+
+
+
+
+
+    /* animation: call 1s ;
+
+  }
+  @keyframes call {
+  
+    from {
+  
+      opacity: 0;
+      transform: rotate(90)
+      
+  }
+  
+  
+  
+  to {
+  
+      opacity: 5;
+      transform: rotateX(0); */
+  
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.call{
+
+    height: 85px;
+    width: 73px;
+    margin-top: 6px;
+}
+
+
+.callLogo{
+    margin-left: 45%;
+}
