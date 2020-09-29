@@ -4,19 +4,19 @@ body {
     background-image: url(http://garchitecture.ca/php/images/headers/wood.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
-    
+    overflow: hidden;
   }
-  
+
   div#background{
-    height: 200%;
+    height: 100%;
     width: 100%;
     padding-top: 20px;
   }
   
   div#gallery {
   animation: photos 1s ;
-    width: 800px;
     margin: auto;
+    margin-left: 5%;
   }
   @keyframes photos {
   
@@ -350,4 +350,10 @@ body {
     -webkit-transform: scale(1.1,1.1);
     z-index: 20;
   }
-  
+  .homeButton {
+    z-index: 50;
+    width: 90px;
+    position: fixed;
+    right: -6px;
+    bottom: 7px;
+}

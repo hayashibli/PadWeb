@@ -1,0 +1,46 @@
+.homeButton{
+  
+    z-index: 1000;
+    margin-top: 0%;
+    width: 115px;
+    position: fixed;
+    right: 0px;
+    bottom: 23px;
+  }
+
+  iframe{
+
+    border-radius: 30px;
+    border: 7px double black;
+  
+  }
+
+  body{
+      overflow: hidden;
+  }
+
+
+  .weatherANM{
+
+
+    animation: weather 1s ;
+
+  }
+  @keyframes weather {
+  
+    from {
+  
+      opacity: 0;
+      transform: rotate(720deg)
+      
+  }
+  
+  
+  
+  to {
+  
+      opacity: 5;
+      transform: rotateX(0);
+  
+  }
+  }

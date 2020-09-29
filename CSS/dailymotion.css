@@ -1,0 +1,9 @@
+.homeButton{
+  
+    z-index: 1000;
+    margin-top: 41%;
+    width: 90px;
+    position: fixed;
+    right: -6px;
+    bottom: 7px;
+  }

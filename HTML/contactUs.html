@@ -2,93 +2,167 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../CSS/contactUs.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="../CSS/contactUs.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>About Us</title>
+
 </head>
 
 <body>
-    <div id="logo">
-        <img src="../contactUs/logox.png" alt="logo" id="logoMain">
+    <header>
+
+    </header>
+
+
+    <main>
+
+        <a href="homePage.html"><img class="homeButn" src="../images/home.png"></a>
+
+     <div class="sec1">
+        <div data-aos="fade-right">
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img id="potos" class="batool" src="../contactUs/batool.png" alt="OSAMA" class="image1">
+                    </div>
+                    <div class="flip-box-back">
+                        <h5 class="name">Batool Alomari</h5>
+                        <p class="description">I am a civil engineering<br> <br> i love coding </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div data-aos="fade-left">
+
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img id="potos" class="omar" src="../contactUs/omar.png" alt="Omar Zain" class="image2"> </div>
+                    <div class="flip-box-back">
+                        <h5 class="name">Omar Zain</h>
+                            <p class="description"> My name is Omar Zain from Syria i like Software Development.
+                                <br><br> i made my first project padWeb with my wonderful team.
+                            </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-aos="zoom-in">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img id="potos" class="haya" src="../contactUs/Haya.png" alt="Haya" class="image3">
+                    </div>
+                    <div class="flip-box-back">
+                        <h5 class="name"> Haya shibli </h5>
+                        <p class="description"> Hello I am an Orthotist and prosthetist <br> <br> and I love coding </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="sec2" >
+        <div data-aos="zoom-in">
+
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img id="potos" class="abdullah" src="../contactUs/Abdullah.png" alt="Haya" class="image3">
+
+                    </div>
+                    <div class="flip-box-back">
+                        <h5 class="name"> abdullah mouazen </h5>
+                        <p class="description"> Hello I'm abdullah mouazen <br> <br> I am in love with coding </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div data-aos="zoom-in">
+
+
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img id="potos" class="joudi" src="../contactUs/Joudi.png" alt="joudi" class="image4">
+
+                    </div>
+                    <div class="flip-box-back">
+                        <h5 class="name">joudi awameh</h5>
+                        <p class="description"> Hi i'm joudi awameh <br> <br> i like coding </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    </main>
+
+
+
+
+    <button class="open-button" onclick="openForm()">Contact Us</button>
+  
+    <div class="chat-popup" id="myForm">
+      <form action="https://www.google.com/" class="form-container">
+        <h1 class="h1p">PadWeb</h1>
+    
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type a Message For codeBreaker Team ..." name="msg" required></textarea>
+    
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
     </div>
 
 
-    <section id="sec1">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="../contactUs/Abdullah.png" alt="space" style="width:250px;height:250px;">
-                </div>
-                <div class="flip-card-back">
-                    <h1>Abdullah Mouazen</h1>
-                    <p>full stack devlopment</p>
-                    <p>Co-founder</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="../contactUs/batool.png" alt="space" style="width:250px;height:250px;">
-                </div>
-                <div class="flip-card-back">
-                    <h1>Batool Alomari</h1>
-                    <p>full stack devlopment</p>
-                    <p>Co-founder</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="../contactUs/Haya.png" alt="space" style="width:250px;height:250px;">
-                </div>
-                <div class="flip-card-back">
-                    <h1>Haya Shibli</h1>
-                    <p>full stack devlopment</p>
-                    <p>Co-founders</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="sec2">
-        <div class="flip-card1">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="../contactUs/Joudi.png" alt="space" style="width:250px;height:250px;">
-                </div>
-                <div class="flip-card-back">
-                    <h1>Joudi Awameh</h1>
-                    <p>full stack devlopment</p>
-                    <p>Co-founder</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card1">
 
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="../contactUs/omar.png" alt="space" style="width:250px;height:250px;">
-                </div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
 
-                <div class="flip-card-back">
-                    <h1>Omar Zain</h1>
-                    <p>full stack devlopment</p>
-                    <p>Co-founder</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div id="divUS">
-        <img src="../contactUs/logoUs.png" alt="logo US" id="logoUS">
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }</script>
 
-    </div>
-    <div class="btnHR">
-        <a href="homePage.html">
-            <hr>
-        </a>
-    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2500,
+        })
+    </script>
+
+
+</body>
+
+</html>
+
+
+
+
 </body>
 
 </html>
