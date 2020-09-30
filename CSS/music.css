@@ -35,11 +35,11 @@ body {
   }
   .slideshow li:nth-child(2) span { 
     background-image: url(../images/musicgirl.jpg);
-    animation-delay: 8s;
+    animation-delay: 5s;
   }
   .slideshow li:nth-child(3) span { 
     background-image: url(../images/music.gif);
-    animation-delay: 12s;
+    animation-delay: 8s;
   }
   
   
@@ -108,20 +108,8 @@ h5 {
     
 }
 
-#rockList  {
-  background-color: rgb(255, 255, 255);
-  padding: 0;
-  height: 650px;
-  width: 366px;
-  position: absolute;
-  left: 14.9%;
-  top: 98.8%;
-	transform: translate(-50%, 0);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-  margin: 30px 0;
-  opacity: 40%;
-}
+
+
 
 #rockList  {
   background-color: rgb(255, 255, 255);
@@ -135,7 +123,7 @@ h5 {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   margin: 30px 0;
-
+  border-radius: 25px;
 }
 
 /*.header {
@@ -333,14 +321,14 @@ h5 {
 #popListDiv{
   margin-left: 50%;
   position: absolute;
-  left: 0.5%;
+  left: 0.1%;
   top: 94.6%;
-  opacity: 40%;
+  opacity: 70%;
 }
 #popListDiv:hover{
   margin-left: 50%;
   position: absolute;
-  left: 0.5%;
+  left: 0.1%;
   top: 94.6%;
   opacity: 100%;
 }
@@ -357,12 +345,9 @@ h5 {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   margin: 30px 0;
+  border-radius: 25px;
 }
 
-/*.header {
-  display: inline-flex;
-  margin: 0 0 40px 0;
-}*/
 
 input[type=checkbox] {
   visibility: hidden;
@@ -568,6 +553,7 @@ height: 80px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     margin: 30px 0;
+    border-radius: 25px;
   }
   
   /*.header {
@@ -774,7 +760,7 @@ height: 80px;
   height: 662px;
   top: -10%;
   transition: opacity 3s linear;
-  left: -23%;
+  left: -23.8%;
   border: 12px double;
   border-radius: 12px;
 }
@@ -789,7 +775,7 @@ margin-top: -44.6%;
 }
 
 #shaabiListDiv, #rockList{
-  opacity: 55%;
+  opacity: 75%;
   }
 
   #shaabiListDiv:hover, #rockList:hover{
@@ -815,7 +801,7 @@ margin-top: -44.6%;
 to {
 
     opacity: 8;
-    transform: rotate(20);
+    transform: rotate(0);
 
 }
 } 

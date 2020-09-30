@@ -264,7 +264,7 @@ button#xBtn {
 @keyframes contact {
     from {
         opacity: 0;
-        transform: skewX(250deg);
+        transform: skew(350deg);
     }
     100% {
         opacity: 5;

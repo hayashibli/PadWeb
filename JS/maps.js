@@ -3,20 +3,24 @@
 
 var btn = document.getElementById('btn');
 var section = document.getElementById('pointer');
-// var fadeDiv = document.getElementById('fadeIN');
+
 var rmvBtn = document.getElementById('rmvBtn');
 
 var p;
-var btnX;
+var btnX, div2;
 
 function quick(){
-  var div = document.createElement('div');
-  div.setAttribute('id', 'hoverIN');
-  section.appendChild(div);
 
-  var div2 = document.createElement('div');
-  div2.setAttribute('id', 'text');
-  section.appendChild(div2);
+  setTimeout(() =>{
+    var div = document.createElement('div');
+    div.setAttribute('id', 'hoverIN');
+
+    section.appendChild(div);
+
+    div2 = document.createElement('div');
+    div2.setAttribute('id', 'text');
+    section.appendChild(div2);
+  }, 700);
 
   setTimeout(() =>{
     btnX = document.createElement('button');
@@ -43,8 +47,23 @@ function removing(){
 
 }
 
+var map = document.getElementById('mapFrame');
+
+btn.addEventListener('click', moveMap);
+
+function moveMap(){
+  map.style.transition = '500ms';
+  map.style.marginLeft = '47%';
+
+}
+
+
+
+
+
 
 var arr = [];
+
 
 for(var i=0; i<5;i++){
   var data = getRndInteger(1, 10);
@@ -53,6 +72,8 @@ for(var i=0; i<5;i++){
 
 
 var ctx = document.getElementById('myAds').getContext('2d');
+
+
 // eslint-disable-next-line no-undef
 function chart(){
   // eslint-disable-next-line no-undef
