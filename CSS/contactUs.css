@@ -43,10 +43,13 @@ main {
 }
 
   .flip-box-back {
-    background-color: #86906ef0;
+    background-color: #c956c9;
     color: white;
     transform: rotateY(180deg);
     border-radius: 30%;
+    margin-left: 12.5%;
+    width: 270px;
+    height: 270px;
   }
 
   h5.name {
@@ -59,33 +62,43 @@ main {
     font-size: 20px;
     line-height: 100%;
     width: 74%;
-    margin: 0 auto;
     margin-top: 12%;
+    margin-left: 15%;
+ 
     font-family: 'Courgette', cursive;
 }
   
   img#potos {
     border-radius: 30%;
-    /* margin: 0 auto; */
+
   }
  
 
 .abdullah, .haya, .omar, .batool, .joudi {
-    width: 300px;
+    width: 270px;
 
 }
 
+.haya, .omar,.batool{
+  margin-left: -30%;
+}
+
+.pushSec1{
+margin-right: 7%;
+}
 
 .sec1 {
     text-align: -webkit-right;
     margin-top: 7%;
+    margin-left: 20%;
 }
 
 .sec2{
     text-align: -webkit-right;
 
-    margin-left: 25%;
+    margin-left: 26%;
     margin-top: 7%;
+    margin-right: -3%;
 
 } 
 
@@ -132,7 +145,7 @@ body {font-family: Arial, Helvetica, sans-serif;
   position: fixed;
   bottom: 0;
   right: 15px;
-  border: 3px solid #f1f1f1;
+  /* border: 3px solid #f1f1f1; */
   z-index: 9;
 }
 
@@ -141,6 +154,7 @@ body {font-family: Arial, Helvetica, sans-serif;
   max-width: 300px;
   padding: 10px;
   background-color: white;
+  border-radius: 7%;
 }
 
 
@@ -152,6 +166,7 @@ body {font-family: Arial, Helvetica, sans-serif;
   background: #f1f1f1;
   resize: none;
   min-height: 200px;
+  border-radius: 13%;
 }
 
 
@@ -162,7 +177,7 @@ body {font-family: Arial, Helvetica, sans-serif;
 
 
 .form-container .btn {
-  background-color: #4CAF50;
+  background-color: #b632b6;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -170,11 +185,12 @@ body {font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   margin-bottom:10px;
   opacity: 0.8;
+  border-radius: 5%;
 }
 
 
 .form-container .cancel {
-  background-color: red;
+  background-color: rgb(89, 0, 255);
 }
 
 
@@ -197,4 +213,101 @@ font-size: 34px;
   position: fixed;
   left: 0px;
   bottom: 7px;
+}
+
+div#sent {
+  background-color: #eb6deb;
+  z-index: 222;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+border-radius: 5%;
+
+animation: psent 1s ;
+
+  }
+  @keyframes psent {
+  
+    from {
+  
+      opacity: 0;
+      transform: skewX(250deg);
+      
+  }
+  
+  
+  
+  to {
+  
+      opacity: 5;
+      transform: rotateX(0);
+  
+  }
+}
+
+
+
+
+#pSent{
+  padding: 25px 45px 45px 25px;
+  font-size: 19px;
+  font-family: cursive;
+  
+}
+
+#sentGif{
+width: 200px;
+margin-left: 26.5%;
+margin-top: -17%;
+
+animation: psent 1s ;
+
+  }
+  @keyframes psent {
+  
+    from {
+  
+      opacity: 0;
+      transform: skewX(250deg);
+      
+  }
+  
+  
+  
+  to {
+  
+      opacity: 5;
+      transform: rotateX(0);
+  
+  }
+}
+
+button#xBtn {
+  float: right;
+ 
+}
+
+.contactANM{
+
+
+  animation: contact 1s ;
+
+}
+@keyframes contact {
+
+  from {
+
+    opacity: 0;
+    transform: skewX(250deg);
+    
+}
+
+
+
+100% {
+
+    opacity: 5;
+    transform: rotateX(0);
+
+}
 }

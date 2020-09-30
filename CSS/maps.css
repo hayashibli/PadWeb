@@ -4,7 +4,9 @@ body{
     background-color: rgb(150 179 172);
     overflow: hidden;
     color: whitesmoke;
-    /* background-image: url(../images/map-background.png); */
+    background-image: url(../images/map3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -83,13 +85,6 @@ body{
 
 
 
-  #chart {
-    position: absolute;
-     top: 60%;
-    left: 28%;
-    width: 32%;
-    float: right;
-}
 
 .map {
     margin: 12% 0% 0% 47%;
@@ -181,8 +176,18 @@ iframe{
 canvas{
 
     display: block;
-    height: 594px;
-    width: 574px;
+    height: 455px;
+    width: 483px;
     margin-top: -57%;
     margin-left: -64%;
+    /* background-color: lightgray; */
+    border-radius: 16px;
+}
+
+#chart {
+    position: absolute;
+     top: 61%;
+    left: 28%;
+    width: 32%;
+    opacity: 92%;
 }

@@ -190,6 +190,8 @@ margin-top: 0.9%;
 } 
 
 
+
+
 #clock:hover{
     cursor: pointer; 
     animation: shake 0.5s;

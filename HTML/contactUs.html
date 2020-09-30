@@ -18,8 +18,10 @@
 
     <main>
 
+        <div class="contactANM">
         <a href="homePage.html"><img class="homeButn" src="../images/home.png"></a>
 
+        <div class="pushSec1">
      <div class="sec1">
         <div data-aos="fade-right">
 
@@ -29,9 +31,11 @@
                         <img id="potos" class="batool" src="../contactUs/batool.png" alt="OSAMA" class="image1">
                     </div>
                     <div class="flip-box-back">
+
                         <h5 class="name">Batool Alomari</h5>
                         <p class="description">I am a software engineering<br>
                              <br> i am interisting in my field so much and i hope you enjoy our website </p>
+
                     </div>
                 </div>
             </div>
@@ -49,8 +53,8 @@
                         <img id="potos" class="omar" src="../contactUs/omar.png" alt="Omar Zain" class="image2"> </div>
                     <div class="flip-box-back">
                         <h5 class="name">Omar Zain</h>
-                            <p class="description"> My name is Omar Zain from Syria i like Software Development.
-                                <br><br> i made my first project padWeb with my wonderful team.
+                            <p class="description"> I am from Syria and my major is<br>civil engineer
+                                <br><br> Proud to be in the CodeBreakers Team.
                             </p>
                     </div>
                 </div>
@@ -65,8 +69,8 @@
                         <img id="potos" class="haya" src="../contactUs/Haya.png" alt="Haya" class="image3">
                     </div>
                     <div class="flip-box-back">
-                        <h5 class="name"> Haya shibli </h5>
-                        <p class="description"> Hello I am an Orthotist and prosthetist <br> <br> and I love coding </p>
+                        <h5 class="name"> Haya shibli </h>
+                        <p class="description"> Hello I am an Orthotist and prosthetist <br> and I love coding </p>
                     </div>
                 </div>
             </div>
@@ -75,7 +79,9 @@
 
 
     </div>
+</div>
 
+<div class="pushSec2">
     <div class="sec2" >
         <div data-aos="zoom-in">
 
@@ -87,8 +93,8 @@
 
                     </div>
                     <div class="flip-box-back">
-                        <h5 class="name"> abdullah mouazen </h5>
-                        <p class="description"> Hello I'm abdullah mouazen <br> <br> I am in love with coding </p>
+                        <h5 class="name"> Abdullah Mouazen </h>
+                        <p class="description"> Hello I'm Abdullah Mouazen <br> I love coding </p>
                     </div>
                 </div>
             </div>
@@ -109,31 +115,34 @@
 
                     </div>
                     <div class="flip-box-back">
-                        <h5 class="name">joudi awameh</h5>
-                        <p class="description"> Hi i'm joudi awameh <br> <br> i like coding </p>
+                        <h5 class="name">Joudi Awameh</h>
+                        <p class="description"> Hi i'm joudi awameh <br> i like coding </p>
                     </div>
                 </div>
             </div>
 
         </div>
 
+    </div>
 
     </div>
     </main>
+</div>
 
-
-
+    <div id="sent">
+        <div id="btnX"></div>
+    </div>
 
     <button class="open-button" onclick="openForm()">Contact Us</button>
   
     <div class="chat-popup" id="myForm">
-      <form action="https://www.google.com/" class="form-container">
+      <form action="#" class="form-container">
         <h1 class="h1p">PadWeb</h1>
     
         <label for="msg"><b>Message</b></label>
-        <textarea placeholder="Type a Message For codeBreaker Team ..." name="msg" required></textarea>
+        <textarea placeholder="Type a Message For CodeBreakers Team ..." name="msg" required></textarea>
     
-        <button type="submit" class="btn">Send</button>
+        <button id="sendMsg" type="submit" class="btn">Send</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
     </div>
@@ -156,6 +165,54 @@
         })
     </script>
 
+<script>
+    var sentDiv = document.getElementById('sent');
+    var msgBtn = document.getElementById('sendMsg');
+    var rmvBtn = document.getElementById('btnX');
+
+    msgBtn.addEventListener('click', contactMe);
+   
+
+    var btnX, p, img;
+
+    function contactMe(e){
+        e.preventDefault();
+
+//  setTimeout(() =>{
+
+    btnX = document.createElement('button');
+    btnX.textContent = 'X';
+    btnX.setAttribute('onclick', 'removing()');
+    btnX.setAttribute('id', 'xBtn');
+    rmvBtn.appendChild(btnX);
+
+
+    p = document.createElement('p');
+    p.setAttribute('id', 'pSent');
+    p.textContent = 'A message has been sent to Code Breakers!!';
+    sentDiv.appendChild(p);
+
+    img = document.createElement('img');
+    img.setAttribute('src', '../contactUs/sent.gif');
+    img.setAttribute('id', 'sentGif');
+    sentDiv.appendChild(img);
+
+//   }, 1000);
+
+    }
+
+
+    rmvBtn.addEventListener('click', removing);
+    function removing(){
+
+     p.remove();
+     btnX.remove();
+     img.remove();
+
+    } 
+
+
+</script>
 
 </body>
 
