@@ -122,6 +122,7 @@ h5 {
   margin: 30px 0;
   opacity: 40%;
 }
+
 #rockList  {
   background-color: rgb(255, 255, 255);
   padding: 0;
@@ -749,6 +750,7 @@ height: 80px;
   position: fixed;
   left: 13px;
   bottom: 10px;
+  cursor: pointer;
 }
 
 
@@ -833,3 +835,5 @@ body{
   color: yellow;
   z-index: 1000;
 }
+
+
