@@ -1,4 +1,3 @@
-
 'use strict';
 var rockItem = [];
 function Rock(name) {
@@ -45,11 +44,17 @@ function addfavourite(event) {
     mainArr.push(rockClick[index3]);
   } else if (!event.target.checked) {
     var index = rockClick.indexOf('Remember Everything');
+    var index2 = mainArr.indexOf('Remember Everything');
     rockClick.splice(index, 1);
     localStorage.removeItem('rock');
+    
     localStorage.setItem('rock', JSON.stringify(rockClick));
-    console.log(rockClick);
-    mainArr.splice(mainArr[0],1);
+    
+    console.log(mainArr[index2] );
+    mainArr.splice(index2,1);
+   
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 
 }
@@ -66,10 +71,14 @@ function favouret1(event) {
     mainArr.push(rockClick[index3]);
   } else if (!event.target.checked) {
     var index = rockClick.indexOf('Wrong Side of Heaven');
+    var index2 = mainArr.indexOf('Wrong Side of Heaven');
     rockClick.splice(index, 1);
     localStorage.removeItem('rock');
     localStorage.setItem('rock', JSON.stringify(rockClick));
-    mainArr.splice(mainArr[1],1);
+    console.log(mainArr[index2] );
+    mainArr.splice(index2,1);
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 }
 
@@ -85,10 +94,14 @@ function favouret2(event) {
     mainArr.push(rockClick[index3]);
   } else if (!event.target.checked) {
     var index = rockClick.indexOf('Everybody Loves An Outlaw');
+    var index2 = mainArr.indexOf('Everybody Loves An Outlaw');
     rockClick.splice(index, 1);
     localStorage.removeItem('rock');
     localStorage.setItem('rock', JSON.stringify(rockClick));
-    mainArr.splice(mainArr[2],1);
+    console.log(mainArr[index2] );
+    mainArr.splice(index2,1);
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 }
 
@@ -103,10 +116,14 @@ function favouret3(event) {
     mainArr.push(rockClick[index3]);
   } else if (!event.target.checked) {
     var index = rockClick.indexOf('Black');
+    var index2 = mainArr.indexOf('Black');
     rockClick.splice(index, 1);
     localStorage.removeItem('rock');
     localStorage.setItem('rock', JSON.stringify(rockClick));
-    mainArr.splice(mainArr[3],1);
+    console.log(mainArr[index2] );
+    mainArr.splice(index2,1);
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 }
 
@@ -123,10 +140,15 @@ function favouret4(event) {
   } else if (!event.target.checked) {
 
     var index = rockClick.indexOf('Jeremy');
+    var index2 = mainArr.indexOf('Jeremy');
     rockClick.splice(index, 1);
     localStorage.removeItem('rock');
+    
     localStorage.setItem('rock', JSON.stringify(rockClick));
-    mainArr.splice(mainArr[4],1);
+    console.log(mainArr[index2] );
+    mainArr.splice(index2,1);
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 }
 
@@ -178,9 +200,12 @@ function popFavourite(event) {
     var index2 = mainArr.indexOf('Get Me');
     popClick.splice(index, 1);
     localStorage.removeItem('pop');
+    
     localStorage.setItem('pop', JSON.stringify(popClick));
+    console.log(mainArr[index2] );
     mainArr.splice(index2,1);
-    console.log(popClick);
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 
 }
@@ -200,9 +225,12 @@ function popFavouret1(event) {
     var index2 = popClick.indexOf('Holy');
     popClick.splice(index, 1);
     localStorage.removeItem('pop');
+    
     localStorage.setItem('pop', JSON.stringify(popClick));
+    console.log(mainArr[index2] );
     mainArr.splice(index2,1);
-    console.log(popClick);
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 }
 
@@ -221,9 +249,12 @@ function popFavouret2(event) {
     var index2 = popClick.indexOf('Rain On Me');
     popClick.splice(index, 1);
     localStorage.removeItem('pop');
+  
     localStorage.setItem('pop', JSON.stringify(popClick));
+    console.log(mainArr[index2] );
     mainArr.splice(index2,1);
-    console.log(popClick);
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 }
 
@@ -241,9 +272,12 @@ function popFavouret3(event) {
     var index2 = popClick.indexOf('Wild Life');
     popClick.splice(index, 1);
     localStorage.removeItem('pop');
+   
     localStorage.setItem('pop', JSON.stringify(popClick));
+    console.log(mainArr[index2] );
     mainArr.splice(index2,1);
-    console.log(popClick);
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 }
 
@@ -262,9 +296,12 @@ function popFavouret4(event) {
     var index2 = popClick.indexOf('Diamonds');
     popClick.splice(index, 1);
     localStorage.removeItem('pop');
+    
     localStorage.setItem('pop', JSON.stringify(popClick));
+    console.log(mainArr[index2] );
     mainArr.splice(index2,1);
-    console.log(popClick);
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 }
 
@@ -286,7 +323,7 @@ new Shaabi('Wdaa ya');
 if (localStorage.getItem('shaabi')) {
   var shaabiClick = JSON.parse(localStorage.getItem('shaabi'));
 } else {
-   shaabiClick = [];
+  shaabiClick = [];
 }
 
 
@@ -317,9 +354,12 @@ function shaabiFavourite(event) {
     var index2 = shaabiClick.indexOf('OudElbanat');
     shaabiClick.splice(index, 1);
     localStorage.removeItem('shaabi');
+    
     localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+    console.log(mainArr[index2] );
     mainArr.splice(index2,1);
-    console.log(shaabiClick);
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 
 }
@@ -339,9 +379,12 @@ function shaabiFavouret1(event) {
     var index2 = shaabiClick.indexOf('Bihawaya');
     shaabiClick.splice(index, 1);
     localStorage.removeItem('shaabi');
+ 
     localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+    console.log(mainArr[index2] );
     mainArr.splice(index2,1);
-    console.log(shaabiClick);
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 }
 
@@ -360,9 +403,12 @@ function shaabiFavouret2(event) {
     var index2 = shaabiClick.indexOf('HobOmri');
     shaabiClick.splice(index, 1);
     localStorage.removeItem('shaabi');
+   
     localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+    console.log(mainArr[index2] );
     mainArr.splice(index2,1);
-    console.log(shaabiClick);
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 }
 
@@ -380,9 +426,12 @@ function shaabiFavouret3(event) {
     var index2 = shaabiClick.indexOf('Habbitek');
     shaabiClick.splice(index, 1);
     localStorage.removeItem('shaabi');
+    
     localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+    console.log(mainArr[index2] );
     mainArr.splice(index2,1);
-    console.log(shaabiClick);
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 }
 
@@ -401,9 +450,12 @@ function shaabiFavouret4(event) {
     var index2 = shaabiClick.indexOf('Wdaa ya');
     shaabiClick.splice(index, 1);
     localStorage.removeItem('shaabi');
+   
     localStorage.setItem('shaabi', JSON.stringify(shaabiClick));
+    console.log(mainArr[index2] );
     mainArr.splice(index2,1);
-    console.log(shaabiClick);
+    localStorage.removeItem('mainArr');
+    localStorage.setItem('mainArr', JSON.stringify(mainArr));
   }
 }
 var mainArr =  [];
@@ -411,21 +463,28 @@ var mainArr =  [];
 var main = document.getElementById('main');
 var div = document.createElement('div');
 div.style.display = 'none';
+if(localStorage.getItem('mainArr')){
+  mainArr= JSON.parse(localStorage.getItem('mainArr'));
+}else{
+  mainArr = [];
+}
 main.appendChild(div);
 
 
 
 
 function myFavorite() {
-  
+
   if (div.style.display === 'none') {
+
     render();
+
     div.style.display = 'block';
-    
+
   } else {
     div.style.display = 'none';
   }
- 
+
 }
 
 
@@ -445,18 +504,19 @@ function render(){
   div.style.borderRadius= '20px';
   div.style.opacity = '0.9';
 
-  
 
   var ul = document.createElement('ul');
-  
+
   for(var y =0; y<mainArr.length; y++ ){
     var li = document.createElement('li');
     li.style.fontSize= '18px';
+
     li.textContent = mainArr[y];
+    localStorage.setItem('mainArr',JSON.stringify(mainArr));
     ul.appendChild(li);
     div.textContent = '';
   }
-  
+
   console.log(mainArr);
   div.appendChild(ul);
 }
@@ -528,7 +588,3 @@ function render(){
 
 
 })();
-
-
-
-
