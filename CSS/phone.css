@@ -1,9 +1,68 @@
-body{
+body {
     overflow: hidden;
     background-image: url(../images/Numbers/phoneBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
 
+#firstRow {
+    animation: clock1 1.5s;
+}
+
+@keyframes clock1 {
+    from {
+        opacity: 0;
+        transform: skewY(55deg);
+    }
+    /* to {
+        opacity: 5;
+        transform: rotateX(360deg);
+    } */
+}
+
+#secondRow {
+    animation: clock2 2s;
+}
+
+@keyframes clock2 {
+    from {
+        opacity: 0;
+        transform: skewY(55deg);
+    }
+    to {
+        opacity: 5;
+        transform: rotateX(0);
+    }
+}
+
+#thirdRow {
+    animation: clock3 2.5s;
+}
+
+@keyframes clock3 {
+    from {
+        opacity: 0;
+        transform: skewY(55deg);
+    }
+    to {
+        opacity: 5;
+        transform: rotateX(0);
+    }
+}
+
+#lastRow {
+    animation: clock4 3s;
+}
+
+@keyframes clock4 {
+    from {
+        opacity: 0;
+        transform: skewY(55deg);
+    }
+    to {
+        opacity: 5;
+        transform: rotateX(0);
+    }
 }
 
 .homeButton {
@@ -14,37 +73,36 @@ body{
     bottom: 7px;
 }
 
-.keypad{
-
+.keypad {
     cursor: pointer;
     width: 98px;
 }
 
-.keypad:active{
+.keypad:active {
     border: 2px solid white;
     border-radius: 50%;
 }
 
-#firstRow, #secondRow, #thirdRow, #lastRow{
-
+#firstRow,
+#secondRow,
+#thirdRow,
+#lastRow {
     text-align: center;
-
 }
 
-#firstRow{
+#firstRow {
     margin-top: 15px;
 }
 
-#lastRow{
-
+#lastRow {
     margin-bottom: 105px;
 }
 
-img{
+img {
     margin: 0.5%;
 }
 
-.allRows{
+.allRows {
     margin-top: 9%;
     border: 2px solid;
     color: black;
@@ -64,23 +122,22 @@ img{
     cursor: pointer;
 }
 
-#call:active{
+#call:active {
     border: 3px solid white;
     border-radius: 50%;
+}
 
-} 
-.call{
-
+.call {
     height: 85px;
     width: 73px;
     margin-top: 6px;
 }
 
-
-.callLogo{
+.callLogo {
     margin-left: 47%;
 }
-#dial{
+
+#dial {
     color: white;
     display: flex;
     position: absolute;
@@ -88,7 +145,8 @@ img{
     top: 2%;
     font-size: 50px;
 }
-#clear{
+
+#clear {
     position: absolute;
     left: 57%;
     top: 9%;
@@ -97,70 +155,35 @@ img{
     cursor: pointer;
 }
 
-
-
-
-
-.numbersANM{
-
-
-    animation: phone 1s ;
-
-  }
-  @keyframes phone {
-  
-    from {
-  
-      opacity: 0;
-      transform: scale(10);
-      
-  }
-  
-  
-  
-  to {
-  
-      opacity: 5;
-      transform: rotateX(0);
-  
-  }
-  }
-
-
-
-
-
-
-
-
-
-  .callANM{
-
-
-    animation: callerX 1s ;
-
-  }
-  @keyframes callerX {
-  
-    from {
-  
-      opacity: 0;
-      transform: scale(10);
-      
-  }
-  
-
-
-80%{
-    transform: rotate(2160deg);
+.numbersANM {
+    animation: phone 1s;
 }
-  
-  
-  100% {
-  
-      opacity: 5;
-      transform: rotateX(0);
-  
-  }
-  }
 
+@keyframes phone {
+    from {
+        opacity: 0;
+        transform: scale(10);
+    }
+    to {
+        opacity: 5;
+        transform: rotateX(0);
+    }
+}
+
+.callANM {
+    animation: callerX 2s;
+}
+
+@keyframes callerX {
+    from {
+        opacity: 0;
+        transform: scale(10);
+    }
+    80% {
+        transform: rotate(2160deg);
+    }
+    100% {
+        opacity: 5;
+        transform: rotateX(0);
+    }
+}
