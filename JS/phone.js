@@ -144,3 +144,41 @@ function remove(){
 //  x.remove();
   dial.textContent = '';
 }
+
+// -------------------------------------------------------------
+var callDiv = document.getElementById('call');
+var dialer = document.getElementById('dialer');
+
+dialer.addEventListener('click', changeToRed);
+
+
+var busyCall;
+
+function changeToRed(){
+  callDiv.style.backgroundColor = 'red';
+  dialer.style.transition = '800ms';
+  dialer.style.transform = 'rotate(119deg)';
+
+
+  busyCall = new Audio();
+  busyCall.src = '../images/phone/busy.mp3';
+  busyCall.play();
+
+  setTimeout(() =>{
+    callDiv.style.backgroundColor = '#0add26';
+    dialer.style.transition = '800ms';
+    dialer.style.transform = 'rotate(0deg)';
+  }, 19500);
+
+  dialer.removeEventListener('click', changeToRed);
+}
+
+dialer.addEventListener('dblclick', backToGreen);
+
+function backToGreen(){
+  callDiv.style.backgroundColor = '#0add26';
+  dialer.style.transition = '800ms';
+  dialer.style.transform = 'rotate(0deg)';
+
+  busyCall.pause();
+}
