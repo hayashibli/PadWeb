@@ -1,0 +1,193 @@
+
+
+body{
+    background-color: rgb(150 179 172);
+    overflow: hidden;
+    color: whitesmoke;
+    background-image: url(../images/map3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#hoverIN{
+    border-radius: 50px;
+    position: absolute;
+    top: 58%;
+    left: 69%;
+    -webkit-animation: colorchange 1s infinite alternate;
+
+  
+}
+@-webkit-keyframes colorchange {
+    0% {
+      padding: 5px;
+      background-color: red;
+    }
+    
+    10% {
+        padding: 7px;
+        background-color: red;
+    }
+    
+    20% {
+      
+        padding: 8px;
+        background-color: red;
+    }
+    
+    30% {
+      
+        padding: 9px;
+        background-color: red;
+    }
+    
+    40% {
+      
+        padding: 10px;
+        background-color: rgb(240, 73, 73);
+    }
+    
+    50% {
+      
+        padding: 11px;
+        background-color: rgb(250, 94, 94);
+    }
+    
+    60% {
+      
+        padding: 12px;
+        background-color: rgb(230, 91, 91);
+    }
+    
+    70% {
+      
+        padding: 13px;
+        background-color: rgb(233, 76, 76);
+    }
+    80% {
+   
+        padding: 14px;
+        background-color: rgb(212, 99, 99);
+    }
+    
+    90% {
+        padding: 15px;
+        background-color: rgb(241, 95, 95);
+    }
+    
+    100% {
+      
+        padding: 16px;
+        background-color: rgb(230, 92, 92);
+    }
+  }
+
+
+
+
+.map {
+    margin: 12% 0% 0% 26.6%;
+}
+
+button#xBtn {
+    position: absolute;
+    top: 29%;
+    left: 63.3%;
+    z-index: 222;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: #fffacf;
+}
+
+
+button#btn {
+    position: absolute;
+    top: 10%;
+    left: 46%;
+    padding: 1.3%;
+    border: none;
+    border-radius: 10px;
+    background-color: #c72187;
+    color: white;
+    cursor: pointer;
+}
+
+   
+
+
+p {
+    background-color: rgb(220 152 217);
+    font-size: 23px;
+    color: rgb(89, 94, 117);
+    font-family: revert;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    border-radius: 13px;
+    width: 30%;
+    height: 15%;
+    text-align: center;
+    padding-top: 4.5%;
+    z-index: 8;
+}
+
+.homeButton{
+  
+    z-index: 1000;
+    margin-top: 41%;
+    width: 90px;
+    position: fixed;
+    right: -6px;
+    bottom: 7px;
+  }
+  
+
+  .mapX {
+    animation: maps 1s ;
+      margin: auto;
+      margin-left: 5%;
+    }
+
+    @keyframes maps {
+    
+      from {
+    
+        opacity: 0;
+        transform: rotateX(360deg);
+        
+    }
+    
+    
+    
+    to {
+    
+        opacity: 5;
+        transform: rotateX(0);
+    
+    }
+}
+
+iframe{
+    border-radius: 50px;
+}
+
+canvas{
+
+    display: block;
+    height: 455px;
+    width: 483px;
+    margin-top: -57%;
+    margin-left: -64%;
+    /* background-color: lightgray; */
+    border-radius: 16px;
+}
+
+#chart {
+    position: absolute;
+     top: 61%;
+    left: 28%;
+    width: 32%;
+    opacity: 92%;
+}

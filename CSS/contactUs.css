@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+body {
+    background-image: url(../contactUs/contactUsPic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    height: 1000px;
+    height: 660px;
+    margin-top: -6%;
+    margin-bottom: -28%;
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 30%;
+    margin-top: 2%;
+    float: left;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box-back {
+    background-color: #c956c9;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 30%;
+    margin-left: 12.5%;
+    width: 270px;
+    height: 270px;
+}
+
+h5.name {
+    margin-top: 12%;
+    font-size: 250%;
+    font-family: 'Courgette', cursive;
+}
+
+p.description {
+    font-size: 20px;
+    line-height: 100%;
+    width: 74%;
+    margin-top: 12%;
+    margin-left: 15%;
+    font-family: 'Courgette', cursive;
+}
+
+img#potos {
+    border-radius: 30%;
+}
+
+.abdullah,
+.haya,
+.omar,
+.batool,
+.joudi {
+    width: 270px;
+}
+
+.haya,
+.omar,
+.batool {
+    margin-left: -30%;
+}
+
+.pushSec1 {
+    margin-right: 7%;
+}
+
+.sec1 {
+    text-align: -webkit-right;
+    margin-top: 7%;
+    margin-left: 20%;
+}
+
+.sec2 {
+    text-align: -webkit-right;
+    margin-left: 26%;
+    margin-top: 7%;
+    margin-right: -3%;
+}
+
+hr {
+    margin-left: 25%;
+    position: fixed;
+    bottom: 1%;
+    cursor: pointer;
+    height: 5px;
+    width: 50%;
+    border: solid rgb(153, 150, 150) 3px;
+    background-color: rgb(199, 191, 191);
+    border-radius: 51%;
+}
+
+
+/* --------------------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    border-radius: 40px;
+}
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    /* border: 3px solid #f1f1f1; */
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 7%;
+}
+
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+    border-radius: 13%;
+}
+
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #b632b6;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border-radius: 5%;
+}
+
+.form-container .cancel {
+    background-color: rgb(89, 0, 255);
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    color: palevioletred;
+    font-size: 34px;
+}
+
+.homeButn {
+    z-index: 1000;
+    margin-top: 43%;
+    width: 82px;
+    position: fixed;
+    left: 0px;
+    bottom: 7px;
+}
+
+div#sent {
+    background-color: #eb6deb;
+    z-index: 222;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    border-radius: 5%;
+    animation: psent 1s;
+}
+
+@keyframes psent {
+    from {
+        opacity: 0;
+        transform: skewX(250deg);
+    }
+    to {
+        opacity: 5;
+        transform: rotateX(0);
+    }
+}
+
+#pSent {
+    padding: 25px 45px 45px 25px;
+    font-size: 19px;
+    font-family: cursive;
+}
+
+#sentGif {
+    width: 200px;
+    margin-left: 26.5%;
+    margin-top: -17%;
+    animation: psent 1s;
+}
+
+@keyframes psent {
+    from {
+        opacity: 0;
+        transform: skewX(250deg);
+    }
+    to {
+        opacity: 5;
+        transform: rotateX(0);
+    }
+}
+
+button#xBtn {
+    float: right;
+}
+
+.contactANM {
+    animation: contact 1s;
+}
+
+@keyframes contact {
+    from {
+        opacity: 0;
+        transform: skew(350deg);
+    }
+    100% {
+        opacity: 5;
+        transform: rotateX(0);
+    }
+}

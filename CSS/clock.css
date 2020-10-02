@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 6%;
+    min-height: 100vh;
+    /* background: rgb(4, 1, 44); */
+    overflow: hidden;
+}
+
+#clock h2 {
+    position: relative;
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 700;
+    letter-spacing: 0.4em;
+    font-size: 3em;
+}
+
+#clock #time {
+    display: flex;
+}
+
+#clock #time div {
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 9px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+#clock #time div span {
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 180px;
+    background: #2196f3;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    z-index: 10;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+}
+
+#clock #time div span:nth-child(2) {
+    height: 50px;
+    font-size: 1.7em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    background: #127fd6;
+}
+
+#clock #time div:nth-child(3) span {
+    background: #ff006a;
+}
+
+#clock #time div:nth-child(3) span:nth-child(2) {
+    background: #ec0062;
+}
+
+#clock #time div:first-child span {
+    background: #3cff00;
+}
+
+#clock #time div:first-child span:nth-child(2) {
+    background: #43ec00;
+}
+
+#clock {
+    animation: clock 2s;
+}
+
+@keyframes clock {
+    from {
+        opacity: 0;
+        transform: skewY(55deg);
+    }
+    to {
+        opacity: 5;
+        transform: rotateX(0);
+    }
+}
+
+.homeButton {
+    z-index: 1000;
+    margin-top: 41%;
+    width: 90px;
+    position: fixed;
+    right: 1px;
+    bottom: 9px;
+}
+
+
+body{
+
+
+    margin-top: -0.01%;
+    border-radius: 30px;
+    border: 7px double black;
+    padding: 10% 0% 0% 0%;
+    background: rgb(4, 1, 44);
+ 
+}
+
+
+
+
+
+/* hr {
+    margin-left: 25%;
+    position: fixed;
+    bottom: 1%;
+    cursor: pointer;
+    height: 5px;
+    width: 50%;
+    border: solid rgb(153, 150, 150) 3px;
+    background-color: rgb(199, 191, 191);
+    border-radius: 51%;
+} */
+
+
+/* #ClockDiv {
+    position: absolute;
+    margin-top: 22%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fe17d8;
+    font-size: 80px;
+    font-family: Orbitron;
+    letter-spacing: 7px; 
+}*/

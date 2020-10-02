@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+  }
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -999;
+  }
+
+
+
+  body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+.allPage {
+
+
+    animation: homePad 1s;
+
+
+}
+
+
+@keyframes homePad {
+
+
+    from {
+
+        opacity: 0;
+        transform: scale(7);
+    }
+
+
+
+    to {
+
+        opacity: 5;
+        transform: rotateX(0);
+
+    }
+
+}
+
+
+
+  .battery {
+    /* display: inline-block; */
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 34px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+    float: right;
+    margin-right: 1%;
+    margin-left: -4%;
+}
+
+#time{
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    margin-bottom: -3%;
+    margin-right: 1%;
+}
+
+.wifiFiguer{
+display: flex;
+margin-left: 1%;
+margin-top: 0.9%;
+
+}
+
+
+.LTUC{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    margin-top: -0.1%;
+}
+
+.wifiSignal{
+    width: 51px;
+    margin-top: -0.2%;
+    margin-bottom: 1%;
+
+}
+
+/* --------------------- */
+  .fisrLine{
+    width: 125px;
+  }
+
+  .fisrLine2{
+
+    width: 125px;
+  }
+/* --------------------- */
+  .firstText{
+    padding-left: 1.5%;
+    font-size: 180%;
+    color: white;
+}
+
+.firstText2{
+    padding-left: 1.5%;
+    font-size: 180%;
+    color: white;
+}
+/* --------------------- */
+.figure1{
+
+    text-align: center;
+    margin-left: 7%;
+    margin-top: 4%;
+}
+  
+.figure2{
+
+    text-align: center;
+    margin-left: 7%;
+    margin-top: 4%;
+}
+
+/* --------------------- */
+.allFigures {
+    display: flex;
+    margin-left: 4%;
+    margin-top: -1.5%;
+
+}
+
+.allFigures2 {
+    display: flex;
+    margin-left: 4%;
+    margin-top: -0.5%;
+
+}
+
+
+/* --------------------- */
+
+
+ #music:hover{
+    cursor: pointer; 
+    animation: shake 0.5s;
+    animation-iteration-count: 9s; 
+    animation: shake 0.9s linear infinite;
+   
+} 
+
+
+#notes:hover{
+    cursor: pointer; 
+    animation: shake 0.5s;
+    animation-iteration-count: 9s; 
+    animation: shake 0.9s linear infinite;
+   
+} 
+
+
+#photos:hover{
+    cursor: pointer; 
+    animation: shake 0.5s;
+    animation-iteration-count: 9s; 
+    animation: shake 0.9s linear infinite;
+   
+} 
+
+
+#weather:hover{
+    cursor: pointer; 
+    animation: shake 0.5s;
+    animation-iteration-count: 9s; 
+    animation: shake 0.9s linear infinite;
+   
+} 
+
+
+
+
+#clock:hover{
+    cursor: pointer; 
+    animation: shake 0.5s;
+    animation-iteration-count: 9s; 
+    animation: shake 0.9s linear infinite;
+   
+} 
+
+
+#phone:hover{
+    cursor: pointer; 
+    animation: shake 0.5s;
+    animation-iteration-count: 9s; 
+    animation: shake 0.9s linear infinite;
+   
+} 
+
+
+#maps:hover{
+    cursor: pointer; 
+    animation: shake 0.5s;
+    animation-iteration-count: 9s; 
+    animation: shake 0.9s linear infinite;
+   
+} 
+
+
+#dailymotion:hover{
+    cursor: pointer; 
+    animation: shake 0.5s;
+    animation-iteration-count: 9s; 
+    animation: shake 0.9s linear infinite;
+   
+} 
+
+#bing:hover{
+    cursor: pointer; 
+    animation: shake 0.5s;
+    animation-iteration-count: 9s; 
+    animation: shake 0.9s linear infinite;
+   
+} 
+
+
+#contacUs:hover{
+    cursor: pointer; 
+    animation: shake 0.5s;
+    animation-iteration-count: 9s; 
+    animation: shake 0.9s linear infinite;
+   
+} 
+
+
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+
+  #dailymotion{
+    border-radius: 28px;
+  }
+
+  #dMotion{
+    margin-left: 86px;
+  }

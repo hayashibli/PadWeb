@@ -1,0 +1,189 @@
+body {
+    overflow: hidden;
+    background-image: url(../images/Numbers/phoneBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#firstRow {
+    animation: clock1 1.5s;
+}
+
+@keyframes clock1 {
+    from {
+        opacity: 0;
+        transform: skewY(55deg);
+    }
+    /* to {
+        opacity: 5;
+        transform: rotateX(360deg);
+    } */
+}
+
+#secondRow {
+    animation: clock2 2s;
+}
+
+@keyframes clock2 {
+    from {
+        opacity: 0;
+        transform: skewY(55deg);
+    }
+    to {
+        opacity: 5;
+        transform: rotateX(0);
+    }
+}
+
+#thirdRow {
+    animation: clock3 2.5s;
+}
+
+@keyframes clock3 {
+    from {
+        opacity: 0;
+        transform: skewY(55deg);
+    }
+    to {
+        opacity: 5;
+        transform: rotateX(0);
+    }
+}
+
+#lastRow {
+    animation: clock4 3s;
+}
+
+@keyframes clock4 {
+    from {
+        opacity: 0;
+        transform: skewY(55deg);
+    }
+    to {
+        opacity: 5;
+        transform: rotateX(0);
+    }
+}
+
+.homeButton {
+    z-index: 50;
+    width: 90px;
+    position: fixed;
+    right: -6px;
+    bottom: 7px;
+}
+
+.keypad {
+    cursor: pointer;
+    width: 98px;
+}
+
+.keypad:active {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#firstRow,
+#secondRow,
+#thirdRow,
+#lastRow {
+    text-align: center;
+}
+
+#firstRow {
+    margin-top: 15px;
+}
+
+#lastRow {
+    margin-bottom: 105px;
+}
+
+img {
+    margin: 0.5%;
+}
+
+.allRows {
+    margin-top: 9%;
+    border: 2px solid;
+    color: black;
+    width: 26%;
+    text-align: center;
+    margin-left: 35%;
+}
+
+#call {
+    text-align: center;
+    margin-top: -13%;
+    background-color: #0add26;
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    transition: 800ms;
+    cursor: pointer;
+}
+
+#call:active {
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.call {
+    height: 85px;
+    width: 73px;
+    margin-top: 6px;
+}
+
+.callLogo {
+    margin-left: 47%;
+}
+
+#dial {
+    color: white;
+    display: flex;
+    position: absolute;
+    left: 37%;
+    top: 2%;
+    font-size: 50px;
+}
+
+#clear {
+    position: absolute;
+    left: 57%;
+    top: 9%;
+    width: 60px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.numbersANM {
+    animation: phone 1s;
+}
+
+@keyframes phone {
+    from {
+        opacity: 0;
+        transform: scale(10);
+    }
+    to {
+        opacity: 5;
+        transform: rotateX(0);
+    }
+}
+
+.callANM {
+    animation: callerX 2s;
+}
+
+@keyframes callerX {
+    from {
+        opacity: 0;
+        transform: scale(10);
+    }
+    80% {
+        transform: rotate(2160deg);
+    }
+    100% {
+        opacity: 5;
+        transform: rotateX(0);
+    }
+}

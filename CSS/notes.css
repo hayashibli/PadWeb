@@ -1,0 +1,47 @@
+body{
+    padding: 0%;
+    margin : 0%;
+    font-family: 'Indie Flower', cursive;
+    background-image: url(../images/todo.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 11%;
+    font-size: 90px;
+}
+#inputField{
+    margin-left: 30%;
+    margin-top: 1.3%;
+    height: 60px;
+    background-color: rgb(255, 255, 136);
+    font-size: 18px;
+}
+#button{
+    height:70px;
+    width: 80px;
+    background-color: rgb(14, 12, 12);
+    color: rgb(255, 255, 136);
+    border-radius: 10px;
+    cursor: pointer;
+}
+#toDoItems{
+    margin-left: 35%;
+    margin-top: 8px;
+    font-size: 60px;
+}
+
+
+.homeButton {
+    z-index: 10;
+    width: 90px;
+    position: fixed;
+    right: -6px;
+    bottom: 7px;
+}
+::placeholder{
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+}

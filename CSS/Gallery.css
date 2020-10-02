@@ -1,0 +1,379 @@
+body {
+    margin: 0px;
+    font-family: 'Cedarville Cursive', cursive;
+    background-image: url(http://garchitecture.ca/php/images/headers/wood.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  div#background{
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+  div#gallery {
+  animation: photos 1s ;
+    margin: auto;
+    margin-left: 5%;
+  }
+  @keyframes photos {
+  
+    from {
+  
+      opacity: 0;
+      transform: scale(11);
+      
+  }
+  
+  
+  
+  to {
+  
+      opacity: 5;
+      transform: rotateX(0);
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  #background img {
+    height: 150px;
+    margin: 0px;
+  }
+  
+  #background figure {
+    float: left;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 1px 2px 3px black;
+  }
+  
+  figure.pic1 {
+    -webkit-transform : rotate(-10deg);
+    transition: 800ms;
+    z-index: 1;
+  }
+  
+  figure.pic1:hover {
+    -webkit-transform : rotate(-10deg);
+  width: 150px;
+  transition: 800ms;
+    z-index: 1;
+  }
+  
+  
+  /*-------------------*/
+  
+  figure.pic2 {
+    -webkit-transform : rotate(15deg);
+    transition: 800ms;
+    z-index: 2;
+  }
+  
+  figure.pic2:hover {
+    -webkit-transform : rotate(-10deg);
+  width: 110px;
+  transition: 800ms;
+    z-index: 1;
+  }
+  
+  
+  /*---------------------------*/
+  
+  figure.pic3 {
+    -webkit-transform : rotate(-25deg);
+    transition: 800ms;
+    z-index: 1;
+  }
+  
+  figure.pic3:hover {
+    -webkit-transform : rotate(-10deg);
+  width: 150px;
+  transition: 800ms;
+    z-index: 1;
+  }
+  
+  /*-----------------------------------*/
+  
+  figure.pic4 {
+    -webkit-transform : rotate(5deg);
+    transition: 800ms;
+    z-index:1;
+  }
+  
+  
+  figure.pic4:hover {
+    -webkit-transform : rotate(-10deg);
+  width: 100px;
+  transition: 800ms;
+    z-index: 1;
+  }
+  
+  
+  /*------------------------------------*/
+  
+  figure.pic5 {
+    -webkit-transform : rotate(5deg);
+     transition: 800ms; 
+    z-index:1;
+  }
+  
+  
+   figure.pic5:hover {
+    -webkit-transform : rotate(-10deg);
+  width: 100px;
+  transition: 800ms;
+    z-index: 1;
+  } 
+  
+  /*------------------------------*/
+  figure.pic6 {
+    -webkit-transform : rotate(-8deg);
+    transition: 700ms;
+    z-index:1;
+  }
+  
+  
+  figure.pic6:hover {
+    -webkit-transform : rotate(-10deg);
+  width:250px;
+  transition: 800ms;
+    z-index: 1;
+  }
+  
+  /*------------------------------------------------*/
+  
+  figure.pic7 {
+    -webkit-transform : rotate(2deg);
+    transition: 800ms;
+    z-index:1;
+  }
+  
+  
+  
+  figure.pic7:hover {
+    -webkit-transform : rotate(-10deg);
+  width:150px;
+  transition: 800ms;
+    z-index: 1;
+  }
+  
+  /*----------------------------------------------------*/
+  
+  figure.pic8 {
+    -webkit-transform : rotate(-13deg);
+    transition: 800ms;
+    z-index:1;
+  }
+  
+  figure.pic8:hover {
+    -webkit-transform : rotate(-10deg);
+  width:150px;
+  transition: 800ms;
+    z-index: 1;
+  }
+  
+  /*--------------------------------------------------*/
+  
+  figure.pic9 {
+    -webkit-transform : rotate(-7deg);
+    transition: 1s;
+    z-index:1;
+  }
+  
+  figure.pic9:hover {
+    -webkit-transform : rotate(-10deg);
+  width:226px;
+  transition: 1s;
+    z-index: 1;
+  }
+  
+  /*-------------------------------------*/
+  
+  
+  figure.pic10 {
+    -webkit-transform : rotate(2deg);
+    transition: 900ms;
+    z-index:1;
+  }
+  
+  figure.pic10:hover {
+    -webkit-transform : rotate(-10deg);
+  width:100px;
+  transition:900ms;
+    z-index: 1;
+  }
+  
+  /*----------------------------------------------*/
+  
+  figure.pic11 {
+   -webkit-transform : rotate(3deg);
+   transition: 900ms;
+    z-index:1;
+  }
+  
+  figure.pic11:hover {
+    -webkit-transform : rotate(-10deg);
+  width:150px;
+  transition: 900ms;
+    z-index: 1;
+  }
+  
+  /*------------------------------------*/
+  
+  figure.pic12 {
+    -webkit-transform : rotate(-11deg);
+    transition:900ms;
+     z-index:1;
+   }
+  
+  
+   figure.pic12:hover {
+    -webkit-transform : rotate(-10deg);
+  width:150px;
+  transition: 800ms;
+    z-index: 1;
+  }
+  
+   
+  
+  /*----------------------------------------------*/
+   figure.pic13 {
+    -webkit-transform : rotate(8deg);
+    transition: 800ms;
+     z-index:1;
+   }
+  
+  
+   figure.pic13:hover {
+    -webkit-transform : rotate(-10deg);
+  width:200px;
+  transition: 800ms;
+    z-index: 1;
+  }
+  
+   /*-------------------------------------------*/
+   figure.pic14 {
+    -webkit-transform : rotate(-10deg);
+    transition: 700ms;
+     z-index:1;
+   }
+   
+  
+  figure.pic14:hover {
+    -webkit-transform : rotate(-10deg);
+  width:200px;
+  transition: 700ms;
+    z-index: 1;
+  }
+  
+  
+  /*--------------------------------------------*/
+   figure.pic15 {
+    -webkit-transform : rotate(9deg);
+    transition: 700ms;
+     z-index:1;
+   }
+   
+  
+   figure.pic15:hover {
+    -webkit-transform : rotate(-10deg);
+  width:200px;
+  transition: 700ms;
+    z-index: 1;
+  }
+  
+  /*---------------------------------------*/
+   figure.pic16 {
+    -webkit-transform : rotate(-13deg);
+    transition: 700ms;
+     z-index:1;
+   }
+  
+   figure.pic16:hover {
+    -webkit-transform : rotate(-10deg);
+  width:200px;
+  transition: 700ms;
+    z-index: 1;
+  }
+  
+   
+  /*--------------------------------------------*/
+   figure.pic17 {
+    -webkit-transform : rotate(5deg);
+    transition: 700ms;
+     z-index:1;
+   }
+  
+  
+   figure.pic17:hover {
+    -webkit-transform : rotate(-10deg);
+  width:200px;
+  transition: 700ms;
+    z-index: 1;
+  }
+  
+  /*--------------------------------------------*/
+   
+   figure.pic18 {
+    -webkit-transform : rotate(-15deg);
+    transition: 700ms;
+     z-index:1;
+   }
+   
+  
+   figure.pic18:hover {
+    -webkit-transform : rotate(-10deg);
+  width:200px;
+  transition: 700ms;
+    z-index: 1;
+  }
+  
+   /*------------------------------------------*/
+  
+  
+  #background figure:hover {
+    box-shadow: 5px 10px 100px black;
+    -webkit-transform: scale(1.1,1.1);
+    z-index: 20;
+  }
+
+
+  /*------------------------------------------------*/
+
+
+  figure.pic19 {
+    -webkit-transform : rotate(-15deg);
+    transition: 700ms;
+     z-index:1;
+   }
+   
+  
+   figure.pic19:hover {
+    -webkit-transform : rotate(-10deg);
+  width:200px;
+  transition: 700ms;
+    z-index: 1;
+  }
+  
+
+  .homeButton {
+    z-index: 50;
+    width: 90px;
+    position: fixed;
+    right: -6px;
+    bottom: 7px;
+}

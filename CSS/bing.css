@@ -1,0 +1,55 @@
+
+body{
+    overflow: hidden;
+
+    background-color: #DDA0DD
+
+
+}
+
+
+.homeButton{
+  
+    z-index: 1000;
+    margin-top: 41%;
+    width: 90px;
+    position: fixed;
+    right: 54px;
+    bottom: 54px;
+  }
+
+
+  iframe{
+
+    border-radius: 30px;
+    border: 7px double black;
+  
+  }
+
+
+
+  .bingANM{
+
+
+    animation: bing 1s ;
+
+  }
+  @keyframes bing {
+  
+    from {
+  
+      opacity: 0;
+      transform: matrix(4, -0.9, 5, 7, 10, 9);
+      
+  }
+  
+  
+  
+  to {
+  
+      opacity: 5;
+      transform: rotateX(0);
+  
+  }
+
+}

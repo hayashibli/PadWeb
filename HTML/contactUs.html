@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/contactUs.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>About Us</title>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+
+    <main>
+
+        <div class="contactANM">
+            <a href="homePage.html"><img class="homeButn" src="../images/home.png"></a>
+
+            <div class="pushSec1">
+                <div class="sec1">
+                    <div data-aos="fade-right">
+
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img id="potos" class="batool" src="../contactUs/batool.png" alt="OSAMA" class="image1">
+                                </div>
+                                <div class="flip-box-back">
+
+                                    <h5 class="name">Batool Alomari</h>
+                                        <p class="description">I am a software engineering
+                                            <br> i hope you enjoy our website </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div data-aos="fade-left">
+
+
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img id="potos" class="omar" src="../contactUs/omar.png" alt="Omar Zain" class="image2"> </div>
+                                <div class="flip-box-back">
+                                    <h5 class="name">Omar Zain</h>
+                                        <p class="description"> I am from Syria and my major is<br>civil engineer
+                                            <br><br> Proud to be in the CodeBreakers Team.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-aos="zoom-in">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img id="potos" class="haya" src="../contactUs/Haya.png" alt="Haya" class="image3">
+                                </div>
+                                <div class="flip-box-back">
+                                    <h5 class="name"> Haya shibli </h>
+                                        <p class="description"> Hello I am an Orthotist and prosthetist <br> and I love coding </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="pushSec2">
+                <div class="sec2">
+                    <div data-aos="zoom-in">
+
+
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img id="potos" class="abdullah" src="../contactUs/Abdullah.png" alt="Haya" class="image3">
+
+                                </div>
+                                <div class="flip-box-back">
+                                    <h5 class="name"> Abdullah Mouazen </h>
+                                        <p class="description"> Hello I'm Abdullah Mouazen <br> Code Breaker Team </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div data-aos="zoom-in">
+
+
+
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img id="potos" class="joudi" src="../contactUs/Joudi.png" alt="joudi" class="image4">
+
+                                </div>
+                                <div class="flip-box-back">
+                                    <h5 class="name">Joudi Awameh</h>
+                                        <p class="description"> Hi i'm joudi awameh <br> Code Breaker Team</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+    </main>
+    </div>
+
+    <div id="sent">
+        <div id="btnX"></div>
+    </div>
+
+    <button class="open-button" onclick="openForm()">Contact Us</button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="#" class="form-container">
+            <h1 class="h1p">PadWeb</h1>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type a Message For CodeBreakers Team ..." name="msg" required></textarea>
+
+            <button id="sendMsg" type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2500,
+        })
+    </script>
+
+    <script>
+        var sentDiv = document.getElementById('sent');
+        var msgBtn = document.getElementById('sendMsg');
+        var rmvBtn = document.getElementById('btnX');
+
+        msgBtn.addEventListener('click', contactMe);
+
+
+        var btnX, p, img;
+
+        function contactMe(e) {
+            e.preventDefault();
+
+            //  setTimeout(() =>{
+
+            btnX = document.createElement('button');
+            btnX.textContent = 'X';
+            btnX.setAttribute('onclick', 'removing()');
+            btnX.setAttribute('id', 'xBtn');
+            rmvBtn.appendChild(btnX);
+
+
+            p = document.createElement('p');
+            p.setAttribute('id', 'pSent');
+            p.textContent = 'A message has been sent to Code Breakers!!';
+            sentDiv.appendChild(p);
+
+            img = document.createElement('img');
+            img.setAttribute('src', '../contactUs/sent.gif');
+            img.setAttribute('id', 'sentGif');
+            sentDiv.appendChild(img);
+
+            //   }, 1000);
+
+        }
+
+
+        rmvBtn.addEventListener('click', removing);
+
+        function removing() {
+
+            p.remove();
+            btnX.remove();
+            img.remove();
+
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+</body>
+
+</html>

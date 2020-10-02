@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../CSS/clock.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+</head>
+
+
+<div class="borderDiv">
+<body>
+    <a href="homePage.html"><img class="homeButton" src="../images/home.png"></a>
+
+    <div id="clock">
+        <!-- <div id="ClockDiv" onload="showTime()"></div> -->
+        <h2>THE TIME NOW IS : </h2>
+        <div id="time">
+
+            <div><span id="hour">00</span><span> hours </span></div>
+            <div><span id="min">00</span><span>mins</span></div>
+            <div><span id="sec">00</span><span>secs</span></div>
+            <div><span id="m">00</span><span>session</span></div>
+
+            <audio id="clk" src="clocking.mp3" autoplay loop></audio>
+
+        </div>
+    </div>
+</div>
+
+    <script>
+        function showTime() {
+            var hours = document.getElementById('hour');
+            var mins = document.getElementById('min');
+            var secs = document.getElementById('sec');
+            var ms = document.getElementById('m');
+
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            var session = "AM";
+            s = (s < 10) ? "0" + s : s;
+            m = (m < 10) ? "0" + m : m;
+
+            if (h == 0) {
+                h = 12;
+            }
+
+            if (h > 12) {
+                h = h - 12;
+                session = "PM";
+            }
+
+            if (h < 10) {
+                h = "0" + h;
+            }
+
+            hours.innerHTML = h;
+            mins.innerHTML = m;
+            secs.innerHTML = s;
+            ms.innerHTML = session;
+
+
+
+
+
+            // var time = h + ":" + m + ":" + s + " " + session;
+
+            // document.getElementById("ClockDiv").textContent = time;
+
+            // setTimeout(showTime, 1000);
+
+        }
+        var interval = setInterval(showTime, 1000);
+
+        // showTime();
+    </script>
+
+
+</body>
+
+</html>

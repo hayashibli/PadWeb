@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padWeb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/homePage.css">
+
+</head>
+
+<body onload="startTime()">
+
+
+    <div class="Bar">
+        <div id="charging" class="battery"></div>
+
+        <div id="time"></div>
+
+        <figure class="wifiFiguer">
+
+            <figcaption class="LTUC">LTUC</figcaption>
+
+            <img class="wifiSignal" src="../images/wifi.png">
+        </figure>
+    </div>
+
+
+    <video autoplay muted loop id="myVideo">
+        <source src="../images/homeBackground.mp4" type="video/mp4">
+    </video>
+
+    <div class="allPage">
+
+        <div class="allFigures">
+
+            <figure class="figure1">
+                <a href="music.html"><img id="music" class="fisrLine" src="../images/music.png" alt="music"
+                        onmousedown="touch.play()"></a>
+                <figcaption class="firstText">Music</figcaption>
+            </figure>
+
+
+            <figure class="figure1">
+                <a href="notes.html"><img id="notes" class="fisrLine" src="../images/notes.png" alt="notes"
+                        onmousedown="touch.play()"></a>
+                <figcaption class="firstText">Notes</figcaption>
+            </figure>
+
+            <figure class="figure1">
+                <a href="Gallery.html"><img id="photos" class="fisrLine" src="../images/Photos.png" alt="Photos"
+                        onmousedown="touch.play()"></a>
+                <figcaption class="firstText">Photos</figcaption>
+            </figure>
+
+            <figure class="figure1">
+
+                <a href="weather.html">
+                    <img id="weather" class="fisrLine" src="../images/weather.png" alt="weather"
+                        onmousedown="touch.play()">
+                </a>
+
+
+
+                <figcaption class="firstText">Weather</figcaption>
+            </figure>
+
+            <figure class="figure1">
+                <a href="clock.html">
+                    <img id="clock" class="fisrLine" src="../images/clock.png" alt="clock" onmousedown="touch.play()">
+                </a>
+                <figcaption class="firstText">Clock</figcaption>
+            </figure>
+
+        </div>
+
+        <div class="allFigures2">
+
+            <figure class="figure2">
+              <a href="phone.html"> 
+                  <img id="phone" class="fisrLine2" src="../images/Phone.png" alt="Phone" onmousedown="touch.play()"></a> 
+                <figcaption class="firstText2">Phone</figcaption>
+            </figure>
+
+            <figure class="figure2">
+                <a href="maps.html"><img id="maps" class="fisrLine2" src="../images/maps.png" alt="maps"
+                        onmousedown="touch.play()"></a>
+                <figcaption class="firstText2">Maps</figcaption>
+            </figure>
+
+
+
+            
+            
+            
+            <figure class="figure2">
+                <a href="searchPage.html"><img id="bing" class="fisrLine2" src="../images/bing.png" alt="searsh page" 4
+                    onmousedown="touch.play()"></a>
+                <figcaption class="firstText2">Bing</figcaption>
+            </figure>
+            
+            <figure  class="figure2">
+                <a href="contactUs.html">
+                    <img id="contacUs" class="fisrLine2" src="../images/ContactUs.png" alt="contact Us" onmousedown="touch.play()">
+                </a>
+                <figcaption class="firstText2">AboutUs </figcaption>
+            </figure>
+            
+            <figure id="dMotion" class="figure2">
+                <a href="Dailymotion.html">
+                    <img id="dailymotion" class="fisrLine2" src="../images/dailymotion.png" alt="Daily Motion" onmousedown="touch.play()">
+                </a>
+
+                <figcaption class="firstText2">Dailymotion</figcaption>
+            </figure>
+            
+        </div>
+
+
+
+
+        <script src="../JS/homePage.js"></script>
+</body>
+
+</html>
